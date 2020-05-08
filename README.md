@@ -1,11 +1,5 @@
 # Portfolio for developers
 
-[![Deploy with Vercel](https://vercel.co/button)](https://vercel.co/new/project?template=https://github.com/smakosh/gatsby-portfolio-dev)
-
-[![Powered by Vercel](./powered-by-vercel.svg)](https://vercel.co?utm_source=smakosh)
-
-## Theme
-
 [Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio)
 
 ## Features
@@ -96,6 +90,12 @@ yarn reset
 - Google recaptcha
 - VSCode
 - And these useful of JavaScript libraries & Gatsby plugins [package.json](package.json)
+
+## 💫 Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 ## License
 
