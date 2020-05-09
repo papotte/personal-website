@@ -1,9 +1,9 @@
+import dev from 'assets/illustrations/dev.svg'
 import {Button, Container} from 'components/common'
 import {Header} from 'components/theme'
+import Data from 'data/config'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Data from 'data/config'
-import dev from 'assets/illustrations/dev.svg'
 import {Details, IntroWrapper, Thumbnail, Wrapper} from './styles'
 
 export const Intro = () => (

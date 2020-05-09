@@ -1,5 +1,7 @@
 {
-  "extends": ["wesbos"],
+  "extends": [
+    "wesbos"
+  ],
   "rules": {
     "no-console": 2,
     "import/no-unresolved": 0,

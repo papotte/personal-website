@@ -1,10 +1,10 @@
-import React from 'react';
-import axios from 'axios';
-import { Formik, Form, FastField, ErrorMessage } from 'formik';
-import Recaptcha from 'react-google-recaptcha';
-import * as Yup from 'yup';
-import { Button, Input } from 'components/common';
-import { Error, Center, InputField } from './styles';
+import axios from 'axios'
+import {Button, Input} from 'components/common'
+import {ErrorMessage, FastField, Form, Formik} from 'formik'
+import React from 'react'
+import Recaptcha from 'react-google-recaptcha'
+import * as Yup from 'yup'
+import {Center, Error, InputField} from './styles'
 
 export default () => (
   <Formik
@@ -13,7 +13,7 @@ export default () => (
       email: '',
       message: '',
       recaptcha: '',
-      success: false,
+      success: false
     }}
     validationSchema={Yup.object().shape({
       name: Yup.string().required('Full name field is required'),
@@ -21,33 +21,33 @@ export default () => (
         .email('Invalid email')
         .required('Email field is required'),
       message: Yup.string().required('Message field is required'),
-      recaptcha: Yup.string().required('Robots are not welcome yet!'),
+      recaptcha: Yup.string().required('Robots are not welcome yet!')
     })}
-    onSubmit={async ({ name, email, message }, { setSubmitting, resetForm, setFieldValue }) => {
+    onSubmit={async ({name, email, message}, {setSubmitting, resetForm, setFieldValue}) => {
       try {
         await axios({
           method: 'POST',
           url: `${process.env.GATSBY_PORTFOLIO_FORMIK_ENDPOINT}`,
           headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json'
           },
           data: JSON.stringify({
             name,
             email,
-            message,
-          }),
-        });
-        setSubmitting(false);
-        setFieldValue('success', true);
-        setTimeout(() => resetForm(), 6000);
+            message
+          })
+        })
+        setSubmitting(false)
+        setFieldValue('success', true)
+        setTimeout(() => resetForm(), 6000)
       } catch (err) {
-        setSubmitting(false);
-        setFieldValue('success', false);
-				alert('Something went wrong, please try again!') // eslint-disable-line
+        setSubmitting(false)
+        setFieldValue('success', false)
+        alert('Something went wrong, please try again!') // eslint-disable-line
       }
     }}
   >
-    {({ values, touched, errors, setFieldValue, isSubmitting }) => (
+    {({values, touched, errors, setFieldValue, isSubmitting}) => (
       <Form>
         <InputField>
           <Input

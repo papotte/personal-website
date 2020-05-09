@@ -1,7 +1,7 @@
 import {Container} from 'components/common'
+import Data from 'data/config'
 import React from 'react'
 import social from './social'
-import Data from 'data/config'
 import {Details, Flex, Links, Wrapper} from './styles'
 
 export const Footer = () => (

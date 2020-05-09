@@ -7,7 +7,6 @@ import {
   foundingDate,
   legalName,
   logo,
-  social,
   socialLinks,
   url
 } from 'data/config'
