@@ -1,5 +1,5 @@
-import footerIllustration from 'assets/illustrations/footer.svg';
-import styled from 'styled-components';
+import styled from 'styled-components'
+import footerIllustration from '../../../assets/illustrations/footer.svg'
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
   @media (max-width: 1960px) {
     padding: 14rem 0 4rem;
   }
-`;
+`
 
 export const Flex = styled.div`
   display: flex;
@@ -23,28 +23,33 @@ export const Flex = styled.div`
     text-align: center;
     align-items: center;
   }
-`;
+`
 
 export const Links = styled.div`
   display: flex;
   align-items: center;
 
   a {
-    margin: 0 0.5rem;
+    margin: 0 0.4rem;
 
     img {
       margin: 0;
     }
 
-    &:first-child,
+    &:first-child{
+      margin-left: 0;
+    }
     &:last-child {
-      margin: 0;
+      margin-right: 0;
     }
   }
-`;
+`
 
 export const Details = styled.div`
   @media (max-width: 680px) {
     margin-bottom: 2rem;
   }
-`;
+  a {
+    color: #4682b4;
+  }
+`

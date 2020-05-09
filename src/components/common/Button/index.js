@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Button = styled.button`
   cursor: pointer;
@@ -13,7 +13,12 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #0074d9;
+  background: #4682b4;
+
+  &:hover{
+    background: #25455f;
+    ${({secondary}) => secondary && `background: #4a4a4a;`}
+  }
 
   &:focus {
     outline: none;
@@ -23,9 +28,9 @@ export const Button = styled.button`
     background: gray;
   }
 
-  ${({ secondary }) =>
-    secondary &&
-    `
+  ${({secondary}) =>
+  secondary &&
+  `
 		background: #001F3F;
 	`}
-`;
+`
