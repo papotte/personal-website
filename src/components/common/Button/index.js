@@ -13,12 +13,7 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #4682b4;
-
-  &:hover{
-    background: #25455f;
-    ${({secondary}) => secondary && `background: #4a4a4a;`}
-  }
+  background: #0074d9;
 
   &:focus {
     outline: none;
