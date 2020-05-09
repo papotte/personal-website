@@ -6,6 +6,7 @@ import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import {Center, Error, InputField} from './styles'
 
+console.log(process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY)
 export default () => (
   <Formik
     initialValues={{
