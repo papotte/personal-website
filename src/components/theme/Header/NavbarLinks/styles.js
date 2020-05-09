@@ -1,13 +1,6 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  a {
-    color: #6d6d6d;
-    text-decoration: none;
-    &:hover{
-    	color: #4682b4;
-    }
-  }
 
   ${({desktop}) =>
   desktop

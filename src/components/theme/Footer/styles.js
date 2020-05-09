@@ -1,5 +1,5 @@
+import footerIllustration from 'assets/illustrations/footer.svg'
 import styled from 'styled-components'
-import footerIllustration from '../../../assets/illustrations/footer.svg'
 
 export const Wrapper = styled.div`
   padding: 28rem 0 4rem 0;
@@ -48,8 +48,5 @@ export const Links = styled.div`
 export const Details = styled.div`
   @media (max-width: 680px) {
     margin-bottom: 2rem;
-  }
-  a {
-    color: #4682b4;
   }
 `

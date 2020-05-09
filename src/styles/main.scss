@@ -1,4 +1,27 @@
 @charset "utf-8";
 // If need, change your variables before importing Bulma
-$title-color: #ff0000;
+@import "colors";
 @import "~bulma/bulma.sass";
+
+@import "reset";
+
+mark {
+  background-color: $warning;
+  color:            $dark;
+}
+
+body {
+  color:      $text;
+  background: $light;
+}
+
+a {
+  &.is-dark {
+    color: $dark;
+
+    &:hover {
+      color: $primary;
+    }
+
+  }
+}

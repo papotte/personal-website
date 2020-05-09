@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
-export const Error = styled.span`
-  color: #ff4136;
-`
+export const Error = styled.span
 
 export const Center = styled.div`
   text-align: left;

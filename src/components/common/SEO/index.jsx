@@ -16,7 +16,7 @@ import Helmet from 'react-helmet'
 export const SEO = ({title = defaultTitle, description = defaultDescription, location = ''}) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
-		"@type": "Organization",
+		"@type": "Person",
 		"legalName": "${legalName}",
 		"url": "${url}",
 		"logo": "${logo}",

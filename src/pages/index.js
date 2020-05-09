@@ -4,7 +4,7 @@ import React from 'react'
 import 'styles/main.scss'
 
 export default () => (
-  <Layout className="container">
+  <Layout>
     <SEO />
     <Intro />
     <Skills />

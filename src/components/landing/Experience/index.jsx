@@ -1,6 +1,5 @@
-import {Button, Container} from 'components/common'
+import {Container} from 'components/common'
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import dev from '../../../assets/illustrations/skills.svg'
 import {Details, ExperienceWrapper, Thumbnail, Wrapper} from './styles'
 
@@ -16,9 +15,9 @@ export const Experience = () => (
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
           standard dummy.
         </p>
-        <Button as={AnchorLink} href="#contact">
+        <button className="button is-primary is-link" href="#contact">
           Hire me
-        </Button>
+        </button>
       </Details>
     </ExperienceWrapper>
   </Wrapper>

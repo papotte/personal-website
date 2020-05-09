@@ -1,12 +1,11 @@
 import axios from 'axios'
-import {Button, Input} from 'components/common'
 import {ErrorMessage, FastField, Form, Formik} from 'formik'
 import React from 'react'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import {Center, Error, InputField} from './styles'
 
-console.log(process.env.GATSBY_PORTFOLIO_RECAPTCHA_KEY)
+const inputStyle = "input is-secondary"
 export default () => (
   <Formik
     initialValues={{
@@ -51,8 +50,8 @@ export default () => (
     {({values, touched, errors, setFieldValue, isSubmitting}) => (
       <Form>
         <InputField>
-          <Input
-            as={FastField}
+          <FastField
+            className={inputStyle}
             type="text"
             name="name"
             component="input"
@@ -60,24 +59,24 @@ export default () => (
             placeholder="Full name*"
             error={touched.name && errors.name}
           />
-          <ErrorMessage component={Error} name="name" />
+          <ErrorMessage component={Error} name="name" className="has-text-danger" />
         </InputField>
         <InputField>
-          <Input
+          <FastField
             id="email"
             aria-label="email"
             component="input"
-            as={FastField}
+            className={inputStyle}
             type="email"
             name="email"
             placeholder="Email*"
             error={touched.email && errors.email}
           />
-          <ErrorMessage component={Error} name="email" />
+          <ErrorMessage component={Error} name="email" className="has-text-danger" />
         </InputField>
         <InputField>
-          <Input
-            as={FastField}
+          <FastField
+            className={inputStyle}
             component="textarea"
             aria-label="message"
             id="message"
@@ -87,7 +86,7 @@ export default () => (
             placeholder="Message*"
             error={touched.message && errors.message}
           />
-          <ErrorMessage component={Error} name="message" />
+          <ErrorMessage component={Error} name="message" className="has-text-danger" />
         </InputField>
         {values.name && values.email && values.message && (
           <InputField>
@@ -97,22 +96,22 @@ export default () => (
               name="recaptcha"
               onChange={value => setFieldValue('recaptcha', value)}
             />
-            <ErrorMessage component={Error} name="recaptcha" />
+            <ErrorMessage component={Error} name="recaptcha" className="has-text-danger" />
           </InputField>
         )}
         {values.success && (
           <InputField>
-            <Center>
+            <Center className="has-text-success">
               <h4>Your message has been successfully sent, I will get back to you ASAP!</h4>
             </Center>
           </InputField>
         )}
         <Center>
-          <Button secondary type="submit" disabled={isSubmitting}>
+          <button className="button is-secondary" type="submit" disabled={isSubmitting}>
             Submit
-          </Button>
+          </button>
         </Center>
       </Form>
     )}
   </Formik>
-);
+)
