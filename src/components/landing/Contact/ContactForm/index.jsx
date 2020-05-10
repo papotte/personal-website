@@ -5,7 +5,7 @@ import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import {Center, Error, InputField} from './styles'
 
-const inputStyle = "input is-secondary"
+const inputStyle = 'input is-primary'
 export default () => (
   <Formik
     initialValues={{
@@ -107,7 +107,7 @@ export default () => (
           </InputField>
         )}
         <Center>
-          <button className="button is-secondary" type="submit" disabled={isSubmitting}>
+          <button className="button is-dark-blue" type="submit" disabled={isSubmitting}>
             Submit
           </button>
         </Center>

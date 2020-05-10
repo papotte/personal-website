@@ -1,3 +1,4 @@
+@import "~bulma/sass/utilities/functions";
 // Colors
 
 $black:              hsl(0, 0%, 4%) !default;
@@ -16,13 +17,46 @@ $white-bis:          hsl(0, 0%, 98%) !default;
 $white:              hsl(0, 0%, 100%) !default;
 
 $orange:             #E3A141 !default;
-$orange-invert:      findColorInvert($orange);
 $turquoise:          #6FC1B9 !default;
-$turquoise-invert:   findColorInvert($turquoise);
-$blue:               #4682b4 !default;
-$blue-invert:        findColorInvert($blue);
 $pink:               #D0004F !default;
-$pink-invert:        findColorInvert($pink);
+
+$light:              $white !default;
+
+$dark:               $grey-darker !default;
+
+$blue:               #4682b4 !default;
+$primary:            $blue !default;
+$link:               $primary !default;
+$info:               hsl(204, 71%, 53%) !default;
+$success:            hsl(141, 53%, 53%) !default;
+$warning:            hsl(48, 100%, 67%) !default;
+$danger:             hsl(348, 86%, 61%) !default;
+$secondary:          $turquoise !default;
+$accent:             $pink;
+$energized:          $orange;
+$text:               $grey-dark;
+
+$title-color:        $primary;
+
+$dark-blue:          #25455f; //bulmaDarken($primary, 10);
+
+$custom-colors:      null !default;
+$colors:             mergeColorMaps((
+  "white": ($white, $black),
+  "black": ($black, $white),
+  "light": ($light, findColorInvert($light)),
+  "dark": ($dark, findColorInvert($dark)),
+  "primary": ($primary, findColorInvert($primary), findLightColor($primary), findDarkColor($primary)),
+  "link": ($link, findColorInvert($link), findLightColor($link), findDarkColor($link)),
+  "info": ($info, findColorInvert($info), findLightColor($info), findLightColor($info)),
+  "success": ($success, findColorInvert($success), findLightColor($success), findLightColor($success)),
+  "warning": ($warning, findColorInvert($warning), findLightColor($warning), findLightColor($warning)),
+  "danger": ($danger, findColorInvert($danger), findLightColor($danger), findLightColor($danger)),
+  "secondary": ($secondary, findColorInvert($secondary)),
+  "accent": ($accent, findColorInvert($accent)),
+  "energized": ($energized, findColorInvert($energized)),
+  "dark-blue": ($dark-blue, findColorInvert($dark-blue))
+), $custom-colors);
 // Typography
 
 $family-sans-serif:  BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
@@ -74,82 +108,3 @@ $speed:              86ms !default;
 // Flags
 
 $variable-columns:   true !default;
-
-$primary:            $blue;
-$link:               $primary;
-$secondary:          $turquoise;
-$accent:             $pink;
-$energized:          $orange;
-$light:              #FFF !default;
-$dark:               $grey-darker;
-$text:               $grey-dark;
-
-$title-color:        $primary;
-
-$primary-dark:       findDarkColor($primary);
-
-
-.is-primary-dark {
-  &.button {
-    @extend .is-primary;
-    background-color: $primary-dark !important;
-
-    &:hover {
-      background-color: $primary !important;
-    }
-  }
-
-  &.input {
-    @extend .is-primary;
-    border-color: $primary-dark !important;
-  }
-}
-
-.is-energized {
-  &.button {
-    @extend .is-primary;
-    background-color: $orange !important;
-
-    &:hover {
-      background-color: $orange-invert !important;
-    }
-  }
-
-  &.input {
-    @extend .is-primary;
-    border-color: $orange !important;
-  }
-}
-
-.is-accent {
-  &.button {
-    @extend .is-primary;
-    background-color: $pink !important;
-
-    &:hover {
-      background-color: $pink-invert !important;
-    }
-  }
-
-  &.input {
-    @extend .is-primary;
-    border-color: $pink !important;
-  }
-}
-
-
-.is-secondary {
-  &.button {
-    @extend .is-primary;
-    background-color: $turquoise !important;
-
-    &:hover {
-      background-color: $turquoise-invert !important;
-    }
-  }
-
-  &.input {
-    @extend .is-primary;
-    border-color: $turquoise !important;
-  }
-}
