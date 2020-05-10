@@ -17,6 +17,14 @@ export const SkillsWrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
+  
+  .skill-list > li{
+      margin: 30px 0 0 0;
+  }
+  
+  .skill-percentage {
+    float: right;
+  }
 `
 
 export const Details = styled.div`
@@ -40,18 +48,5 @@ export const Details = styled.div`
     font-weight: normal;
     line-height: 1.3;
     color: #707070;
-  }
-`
-
-export const Thumbnail = styled.div`
-  flex: 1;
-
-  @media (max-width: 960px) {
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-
-  img {
-    width: 100%;
   }
 `

@@ -1,10 +1,10 @@
-import dev from 'assets/illustrations/dev.svg'
+import dev from 'assets/illustrations/dev4.svg'
 import {Container} from 'components/common'
 import {Header} from 'components/theme'
 import Data from 'data/config'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import {Details, IntroWrapper, Thumbnail, Wrapper} from './styles'
+import {Details, IntroWrapper, Wrapper} from './styles'
 
 export const Intro = () => (
   <Wrapper id="about">
@@ -17,9 +17,9 @@ export const Intro = () => (
           Contact me
         </AnchorLink>
       </Details>
-      <Thumbnail>
+      <figure className="image">
         <img src={dev} alt={Data.defaultDescription} />
-      </Thumbnail>
+      </figure>
     </IntroWrapper>
   </Wrapper>
 )

@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "bulma": "^0.8.2",
+    "bulma-timeline": "^3.0.4",
     "dotenv": "^6.2.0",
     "formik": "^2.1.4",
     "gatsby": "^2.17.7",

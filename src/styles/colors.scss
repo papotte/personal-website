@@ -48,12 +48,12 @@ $colors:             mergeColorMaps((
   "dark": ($dark, findColorInvert($dark)),
   "primary": ($primary, findColorInvert($primary), findLightColor($primary), findDarkColor($primary)),
   "link": ($link, findColorInvert($link), findLightColor($link), findDarkColor($link)),
-  "info": ($info, findColorInvert($info), findLightColor($info), findLightColor($info)),
-  "success": ($success, findColorInvert($success), findLightColor($success), findLightColor($success)),
-  "warning": ($warning, findColorInvert($warning), findLightColor($warning), findLightColor($warning)),
-  "danger": ($danger, findColorInvert($danger), findLightColor($danger), findLightColor($danger)),
+  "info": ($info, findColorInvert($info), findLightColor($info), findDarkColor($info)),
+  "success": ($success, findColorInvert($success), findLightColor($success), findDarkColor($success)),
+  "warning": ($warning, findColorInvert($warning), findLightColor($warning), findDarkColor($warning)),
+  "danger": ($danger, findColorInvert($danger), findLightColor($danger), findDarkColor($danger)),
   "secondary": ($secondary, findColorInvert($secondary)),
-  "accent": ($accent, findColorInvert($accent)),
+  "accent": ($accent, findColorInvert($accent), findLightColor($accent), findDarkColor($accent)),
   "energized": ($energized, findColorInvert($energized)),
   "dark-blue": ($dark-blue, findColorInvert($dark-blue))
 ), $custom-colors);
