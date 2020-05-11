@@ -1,5 +1,5 @@
 import {Container} from 'components/common'
-import Resume from 'data/resume.js'
+import Resume from 'data/resume'
 import React from 'react'
 import {Details} from '../Experience/styles'
 import SkillsList from './SkillsList'
@@ -16,14 +16,14 @@ export const Skills = () => (
           <div className="column is-6">
             <div className="column">
               <div className="has-text-centered">
-              <span className="icon is-large">
-                <i className="fi icon-code"></i>
-              </span>
+                <span className="icon is-large">
+                  <i className="fi icon-code"></i>
+                </span>
                 <h2 className="title is-5 has-text-dark">Languages</h2>
               </div>
               <SkillsList
                 skills={skills
-                  .filter(skill => skill.keywords.includes("Language"))
+                  .filter(skill => skill.keywords.includes('Language'))
                   .reduce((obj, item) => {
                     obj[item.name] = item.level
                     return obj
@@ -32,14 +32,14 @@ export const Skills = () => (
             </div>
             <div className="column">
               <div className="has-text-centered">
-              <span className="icon is-large">
-                <i className="fi icon-laptop"></i>
-              </span>
+                <span className="icon is-large">
+                  <i className="fi icon-laptop"></i>
+                </span>
                 <h2 className="title is-5 has-text-dark">Frameworks</h2>
               </div>
               <SkillsList
                 skills={skills
-                  .filter(skill => skill.keywords.includes("Framework"))
+                  .filter(skill => skill.keywords.includes('Framework'))
                   .reduce((obj, item) => {
                     obj[item.name] = item.level
                     return obj
@@ -56,7 +56,7 @@ export const Skills = () => (
             </div>
             <SkillsList
               skills={skills
-                .filter(skill => skill.keywords.includes("Tools"))
+                .filter(skill => skill.keywords.includes('Tools'))
                 .reduce((obj, item) => {
                   obj[item.name] = item.level
                   return obj

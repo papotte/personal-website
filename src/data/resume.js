@@ -1,188 +1,183 @@
 export default {
-  "basics": {
-    "name": "Rossana Bermudez",
-    "label": "Software Engineer",
-    "picture": "images/photo.jpg",
-    "x_title": "/favicon/icon.svg",
-    "summary": "Going on 4 years of experience in IT. " +
-      "Currently I’m working as a developer focusing on frontend and UX. I’m interested in all" +
-      " sorts of automation and developing front-end and back-end applications."
+  basics: {
+    name: 'Rossana Bermudez',
+    label: 'Software Engineer',
+    picture: 'images/photo.jpg',
+    x_title: '/favicon/icon.svg',
+    summary:
+      'Going on 4 years of experience in IT. ' +
+      'Currently I’m working as a developer focusing on frontend and UX. I’m interested in all' +
+      ' sorts of automation and developing front-end and back-end applications.'
   },
-  "location": {
-    'country': "Germany",
-    'countryCode': "DE",
-    'city': "Berlin",
-    'zipCode': '10969'
+  location: {
+    country: 'Germany',
+    countryCode: 'DE',
+    city: 'Berlin',
+    zipCode: '10969'
   },
-  "work": [
+  work: [
     {
-      "company": "PwC",
-      "position": "Software Engineer",
-      "website": "https://www.pwc.de",
-      "startDate": "2019-07-01",
-      "endDate": "",
-      "summary": "Moved to Berlin to join the PwC's DigiSpace as a full-stack developer",
-      "Proficientlights": [],
-      "tags": ["java", "typescript", "vuejs", "docker", "kubernetes", "gitlab ci"]
+      company: 'PwC',
+      position: 'Software Engineer',
+      website: 'https://www.pwc.de',
+      startDate: '2019-07-01',
+      endDate: '',
+      summary: "Moved to Berlin to join the PwC's DigiSpace as a full-stack developer",
+      Proficientlights: [],
+      tags: ['java', 'typescript', 'vuejs', 'docker', 'kubernetes', 'gitlab ci']
     },
     {
-      "company": "new frontiers Software",
-      "position": "Developer",
-      "website": "https://www.new-frontiers.de/",
-      "startDate": "2016-01-01",
-      "endDate": "2019-06-30",
-      "summary": "During my master studies, started working part-time as a developer doing web and hybrid" +
-        " applications",
-      "Proficientlights": [],
-      "tags": ["javascript", "android", "ionic", "angular", "vuejs", "nestjs", "git"]
+      company: 'new frontiers Software',
+      position: 'Developer',
+      website: 'https://www.new-frontiers.de/',
+      startDate: '2016-01-01',
+      endDate: '2019-06-30',
+      summary: 'During my master studies, started working part-time as a developer doing web and hybrid applications',
+      Proficientlights: [],
+      tags: ['javascript', 'android', 'ionic', 'angular', 'vuejs', 'nestjs', 'git']
     },
     {
-      "company": "AdSigo.co",
-      "position": "Software Engineer",
-      "startDate": "2015-04-01",
-      "endDate": "2015-11-30",
-      "summary": "Back in Colombia, started working for a startup, digitizing the business of public advertisement",
-      "Proficientlights": [],
-      "tags": ["javascript", "php", "angularjs", "git"]
+      company: 'AdSigo.co',
+      position: 'Software Engineer',
+      startDate: '2015-04-01',
+      endDate: '2015-11-30',
+      summary: 'Back in Colombia, started working for a startup, digitizing the business of public advertisement',
+      Proficientlights: [],
+      tags: ['javascript', 'php', 'angularjs', 'git']
     },
     {
-      "company": "Naturefund e.V",
-      "position": "IT Specialist",
-      "website": "https://www.naturefund.de/",
-      "startDate": "2013-11-25",
-      "endDate": "2014-11-30",
-      "summary": "Moved to Wiesbaden, Germany to work as a mobile app developer",
-      "Proficientlights": [],
-      "tags": ["javascript", "cordova", "closure", "svn"]
+      company: 'Naturefund e.V',
+      position: 'IT Specialist',
+      website: 'https://www.naturefund.de/',
+      startDate: '2013-11-25',
+      endDate: '2014-11-30',
+      summary: 'Moved to Wiesbaden, Germany to work as a mobile app developer',
+      Proficientlights: [],
+      tags: ['javascript', 'cordova', 'closure', 'svn']
     }
   ],
-  "education": [
+  education: [
     {
-      "institution": "Universität Darmstadt",
-      "area": "Distributed Software Systems",
-      "studyType": "Master",
-      "startDate": "2015-10-01",
-      "endDate": "2019-07-22",
-      "courses": [
-        "Distributed software",
-        "Product management",
-        "Network management",
-        "Requirements engineering"
-      ]
+      institution: 'Universität Darmstadt',
+      area: 'Distributed Software Systems',
+      studyType: 'Master',
+      startDate: '2015-10-01',
+      endDate: '2019-07-22',
+      courses: ['Distributed software', 'Product management', 'Network management', 'Requirements engineering']
     }
   ],
-  "skills": [
+  skills: [
     {
-      "name": "Java",
-      "level": "Proficient",
-      "keywords": ["Development", "Language"]
+      name: 'Java',
+      level: 'Proficient',
+      keywords: ['Development', 'Language']
     },
     {
-      "name": "Spring Boot",
-      "level": "Advanced",
-      "keywords": ["Development", "Framework"]
+      name: 'Spring Boot',
+      level: 'Advanced',
+      keywords: ['Development', 'Framework']
     },
     {
-      "name": "JavaScript",
-      "level": "Advanced",
-      "keywords": ["Development", "Language"]
+      name: 'JavaScript',
+      level: 'Advanced',
+      keywords: ['Development', 'Language']
     },
     {
-      "name": "VueJS",
-      "level": "Advanced",
-      "keywords": ["Development", "Framework"]
+      name: 'VueJS',
+      level: 'Advanced',
+      keywords: ['Development', 'Framework']
     },
     {
-      "name": "Angular",
-      "level": "Advanced",
-      "keywords": ["Development", "Framework"]
+      name: 'Angular',
+      level: 'Advanced',
+      keywords: ['Development', 'Framework']
     },
     {
-      "name": "React",
-      "level": "Basic",
-      "keywords": ["Development", "Framework"]
+      name: 'React',
+      level: 'Basic',
+      keywords: ['Development', 'Framework']
     },
     {
-      "name": "CSS",
-      "level": "Advanced",
-      "keywords": ["Development", "Language"]
+      name: 'CSS',
+      level: 'Advanced',
+      keywords: ['Development', 'Language']
     },
     {
-      "name": "NodeJS",
-      "level": "Advanced",
-      "keywords": ["Development", "Tools"]
+      name: 'NodeJS',
+      level: 'Advanced',
+      keywords: ['Development', 'Tools']
     },
     {
-      "name": "Git",
-      "level": "Advanced",
-      "keywords": ["Development", "Tools"]
+      name: 'Git',
+      level: 'Advanced',
+      keywords: ['Development', 'Tools']
     },
     {
-      "name": "Scrum",
-      "level": "Advanced",
-      "keywords": ["Development", "Tools"]
+      name: 'Scrum',
+      level: 'Advanced',
+      keywords: ['Development', 'Tools']
     },
     {
-      "name": "Unit Testing",
-      "level": "Proficient",
-      "keywords": ["Development", "Tools"]
+      name: 'Unit Testing',
+      level: 'Proficient',
+      keywords: ['Development', 'Tools']
     },
     {
-      "name": "E2E Testing",
-      "level": "Proficient",
-      "keywords": ["Development", "Tools"]
+      name: 'E2E Testing',
+      level: 'Proficient',
+      keywords: ['Development', 'Tools']
     },
     {
-      "name": "SQL",
-      "level": "Proficient",
-      "keywords": ["Development", "Language"]
+      name: 'SQL',
+      level: 'Proficient',
+      keywords: ['Development', 'Language']
     },
     {
-      "name": "Bash",
-      "level": "Intermediate",
-      "keywords": ["DevOps", "Language"]
+      name: 'Bash',
+      level: 'Intermediate',
+      keywords: ['DevOps', 'Language']
     },
     {
-      "name": "Docker",
-      "level": "Intermediate",
-      "keywords": ["DevOps", "Tools"]
+      name: 'Docker',
+      level: 'Intermediate',
+      keywords: ['DevOps', 'Tools']
     },
     {
-      "name": "Kubernetes",
-      "level": "Basic",
-      "keywords": ["DevOps", "Tools"]
+      name: 'Kubernetes',
+      level: 'Basic',
+      keywords: ['DevOps', 'Tools']
     }
   ],
-  "languages": [
+  languages: [
     {
-      "language": "English",
-      "fluency": "Fluent speaker"
+      language: 'English',
+      fluency: 'Fluent speaker'
     },
     {
-      "language": "German",
-      "fluency": "Fluent speaker"
+      language: 'German',
+      fluency: 'Fluent speaker'
     },
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      language: 'Spanish',
+      fluency: 'Native speaker'
     }
   ],
-  "interests": [
+  interests: [
     {
-      "name": "Travel bug",
-      "x_icon": "fa-globe-africa"
+      name: 'Travel bug',
+      x_icon: 'fa-globe-africa'
     },
     {
-      "name": "Cat lover",
-      "x_icon": "fa-cat"
+      name: 'Cat lover',
+      x_icon: 'fa-cat'
     },
     {
-      "name": "Cooking",
-      "x_icon": "fa-utensils"
+      name: 'Cooking',
+      x_icon: 'fa-utensils'
     },
     {
-      "name": "Videogames",
-      "x_icon": "fa-brain"
+      name: 'Videogames',
+      x_icon: 'fa-brain'
     }
   ]
 }

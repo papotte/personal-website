@@ -36,7 +36,7 @@ export const Links = styled.div`
       margin: 0;
     }
 
-    &:first-child{
+    &:first-child {
       margin-left: 0;
     }
     &:last-child {

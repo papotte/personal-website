@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   background-image: url(${detailsIllustration});
   background-size: contain;
   background-position: right top;
- 
+
   background-repeat: no-repeat;
 `
 
@@ -18,9 +18,9 @@ export const ExperienceWrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
-  
+
   .image {
-    width: 350px
+    width: 350px;
   }
 `
 
@@ -46,7 +46,7 @@ export const Details = styled.div`
     line-height: 1.3;
     color: #707070;
   }
-  
+
   .column {
     .icon {
       margin-bottom: 10px;

@@ -49,10 +49,10 @@ Project on [Behance](https://www.behance.net/gallery/74172961/Free-Gatsby-portfo
 2. Grab a Google recaptcha key from [Google Recaptcha](https://www.google.com/recaptcha/admin)
 3. Grab your Github token from [GitHub](https://github.com/settings/tokens/new?scopes=repo&description=portfolio-dev)
 4. Click [![Deploy with Vercel](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/smakosh/gatsby-portfolio-dev) and pass in your:
-  
-  - Formik form endpoint
-  - Google recaptcha public key
-  - Github token
+
+- Formik form endpoint
+- Google recaptcha public key
+- Github token
 
 To Vercel's now secrets UI form.
 

@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 function TimelineItem(props) {
   return (
@@ -9,12 +9,13 @@ function TimelineItem(props) {
       <div className="timeline-content">
         <p className="heading is-4">{props.date}</p>
         <h1 className="title is-5">{props.company}</h1>
-        <p style={{maxWidth: "25em"}} className="is-size-6">{props.summary}</p>
-        <div className="tags are-small is-multiline columns">{
-          props.tags.map((item, j) => {
+        <p style={{maxWidth: '25em'}} className="is-size-6">
+          {props.summary}
+        </p>
+        <div className="tags are-small is-multiline columns">
+          {props.tags.map((item, j) => {
             return <div className="tag is-energized is-light">{item}</div>
-          })
-        }
+          })}
         </div>
       </div>
     </div>

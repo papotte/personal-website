@@ -6,6 +6,11 @@
   "plugins": [
     "prettier"
   ],
+  "ignorePatterns": [
+    "public/",
+    "node_modules/",
+    "gatsby-*.js"
+  ],
   "rules": {
     "import/prefer-default-export": 0,
     "no-console": 2,

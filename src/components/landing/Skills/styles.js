@@ -17,11 +17,11 @@ export const SkillsWrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
-  
-  .skill-list > li{
-      margin: 30px 0 0 0;
+
+  .skill-list > li {
+    margin: 30px 0 0 0;
   }
-  
+
   .skill-percentage {
     float: right;
   }

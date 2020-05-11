@@ -1,5 +1,5 @@
+import {Layout} from 'components/common/Layout'
 import React from 'react'
-import {Layout} from '../components/common/Layout'
 
 export default () => (
   <Layout>

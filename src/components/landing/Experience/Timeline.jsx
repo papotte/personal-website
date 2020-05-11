@@ -1,14 +1,12 @@
-import Resume from "data/resume.js"
-import React from "react"
-import TimelineItem from "./TimelineItem"
+import Resume from 'data/resume'
+import React from 'react'
+import TimelineItem from './TimelineItem'
 
 function Timeline() {
   return (
     <div className="timeline is-centered">
       <header className="timeline-header">
-        <span className="tag is-medium is-dark">
-          {new Date().getFullYear()}
-        </span>
+        <span className="tag is-medium is-dark">{new Date().getFullYear()}</span>
       </header>
       <div className="timeline-item">
         <div className="timeline-marker is-accent"></div>
@@ -32,9 +30,9 @@ function Timeline() {
                 return (
                   <TimelineItem
                     key={j}
-                    date={new Date(item.startDate).toLocaleString("en-UK", {
-                      month: "long",
-                      year: "numeric"
+                    date={new Date(item.startDate).toLocaleString('en-UK', {
+                      month: 'long',
+                      year: 'numeric'
                     })}
                     company={item.company}
                     summary={item.summary}
