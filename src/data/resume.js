@@ -22,7 +22,8 @@ export default {
       "startDate": "2019-07-01",
       "endDate": "",
       "summary": "Moved to Berlin to join the PwC's DigiSpace as a full-stack developer",
-      "highlights": []
+      "highlights": [],
+      "tags": ["java", "typescript", "vuejs", "docker", "gitlab ci"]
     },
     {
       "company": "new frontiers Software",
@@ -30,17 +31,29 @@ export default {
       "website": "https://www.new-frontiers.de/",
       "startDate": "2016-01-01",
       "endDate": "2019-06-30",
-      "summary": "Started working part-time as a developer doing web and hybrid applications",
-      "highlights": []
+      "summary": "During my master studies, started working part-time as a developer doing web and hybrid" +
+        " applications",
+      "highlights": [],
+      "tags": ["javascript", "android", "ionic", "angular", "vuejs", "nestjs", "git"]
     },
     {
-      "company": "AdSigo",
+      "company": "AdSigo.co",
       "position": "Software Engineer",
-      "website": "https://https://www.new-frontiers.de/",
       "startDate": "2015-04-01",
       "endDate": "2015-11-30",
       "summary": "Back in Colombia, started working for a startup, digitizing the business of public advertisement",
-      "highlights": []
+      "highlights": [],
+      "tags": ["javascript", "php", "angularjs", "git"]
+    },
+    {
+      "company": "naturefund e.V",
+      "position": "IT Specialist",
+      "website": "https://www.naturefund.de/",
+      "startDate": "2013-11-25",
+      "endDate": "2014-11-30",
+      "summary": "Moved to Wiesbaden, Germany to work as a mobile app developer",
+      "highlights": [],
+      "tags": ["javascript", "cordova", "closure", "svn"]
     }
   ],
   "education": [

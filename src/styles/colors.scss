@@ -52,10 +52,10 @@ $colors:             mergeColorMaps((
   "success": ($success, findColorInvert($success), findLightColor($success), findDarkColor($success)),
   "warning": ($warning, findColorInvert($warning), findLightColor($warning), findDarkColor($warning)),
   "danger": ($danger, findColorInvert($danger), findLightColor($danger), findDarkColor($danger)),
-  "secondary": ($secondary, findColorInvert($secondary)),
+  "secondary": ($secondary, findColorInvert($secondary), findLightColor($secondary), findDarkColor($secondary)),
   "accent": ($accent, findColorInvert($accent), findLightColor($accent), findDarkColor($accent)),
-  "energized": ($energized, findColorInvert($energized)),
-  "dark-blue": ($dark-blue, findColorInvert($dark-blue))
+  "energized": ($energized, findColorInvert($energized), findLightColor($energized), findDarkColor($energized)),
+  "dark-blue": ($dark-blue, findColorInvert($dark-blue), findLightColor($dark-blue), findDarkColor($dark-blue))
 ), $custom-colors);
 // Typography
 

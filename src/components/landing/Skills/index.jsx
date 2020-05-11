@@ -4,6 +4,7 @@ import laptopIcon from 'assets/icons/laptop.svg'
 import {Container} from 'components/common'
 import Resume from 'data/resume.js'
 import React from 'react'
+import {Details} from '../Experience/styles'
 import SkillsList from './SkillsList'
 import {SkillsWrapper, Wrapper} from './styles'
 
@@ -12,7 +13,8 @@ const skills = Resume.skills || []
 export const Skills = () => (
   <Wrapper id="skills">
     <SkillsWrapper as={Container}>
-      <div className="container">
+      <Details>
+        <h1 className="title">Languages and tools</h1>
         <div className="columns">
           <div className="column is-6">
             <div className="column">
@@ -65,7 +67,7 @@ export const Skills = () => (
             />
           </div>
         </div>
-      </div>
+      </Details>
     </SkillsWrapper>
   </Wrapper>
 )
