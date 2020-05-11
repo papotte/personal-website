@@ -59,5 +59,14 @@ a {
   }
 }
 
+#to-top {
+  &.hidden {
+    display: none;
+  }
+
+  .icon {
+    margin-top: -3px;
+  }
+}
 
 @import "~bulma-timeline";

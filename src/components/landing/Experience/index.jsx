@@ -12,7 +12,7 @@ export const Experience = () => (
         <Timeline />
       </Details>
       <figure className="image">
-        <img src={dev} />
+        <img src={dev} alt="experience"/>
       </figure>
     </ExperienceWrapper>
   </Wrapper>

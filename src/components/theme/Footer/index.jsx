@@ -19,7 +19,8 @@ export const Footer = () => (
             {Data.author}
           </a>{' '}
           with{' '}
-          <a href="https://reactjs.org/" target="_blank" className="icon has-text-react is-small">
+          <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank"
+             className="icon has-text-react is-small" aria-label="ReactJS">
             <i className="fi icon-react"></i>
           </a>
         </p>

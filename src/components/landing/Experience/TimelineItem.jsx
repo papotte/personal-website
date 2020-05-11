@@ -14,7 +14,7 @@ function TimelineItem(props) {
         </p>
         <div className="tags are-small is-multiline columns">
           {props.tags.map((item, j) => {
-            return <div className="tag is-energized is-light">{item}</div>
+            return <div key={j} className="tag is-energized is-light">{item}</div>
           })}
         </div>
       </div>

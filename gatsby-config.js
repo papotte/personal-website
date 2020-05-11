@@ -8,7 +8,8 @@ module.exports = {
   siteMetadata: {
     title: config.defaultTitle,
     description: config.defaultDescription,
-    author: config.author
+    author: config.author,
+    siteUrl: config.url
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -60,6 +61,7 @@ module.exports = {
         icon: `./static${config.logo}`
       }
     },
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
+    `gatsby-plugin-sitemap`
   ]
 }
