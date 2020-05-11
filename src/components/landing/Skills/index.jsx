@@ -5,7 +5,6 @@ import {Details} from '../Experience/styles'
 import SkillsList from './SkillsList'
 import {SkillsWrapper, Wrapper} from './styles'
 
-console.log(Resume.skills)
 const skills = Resume.skills || []
 export const Skills = () => (
   <Wrapper id="skills">
