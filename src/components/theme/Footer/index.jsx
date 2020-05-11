@@ -9,7 +9,7 @@ export const Footer = () => (
     <Flex as={Container}>
       <Details>
         <h2>{Data.legalName}</h2>
-        <span>
+        <p>
           © All rights are reserved | {Data.foundingDate} | Made with {' '}
           <span aria-label="love" role="img">
             💖
@@ -17,8 +17,12 @@ export const Footer = () => (
           by{' '}
           <a href={Data.url} rel="noopener noreferrer" target="_blank">
             {Data.author}
+          </a>{' '}
+          with{' '}
+          <a href="https://reactjs.org/" target="_blank" className="icon">
+            <img src="icons/react.svg" alt="ReactJS" />
           </a>
-        </span>
+        </p>
       </Details>
       <Links>
         {social.map(({id, name, link, icon}) => (

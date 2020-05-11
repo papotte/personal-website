@@ -49,4 +49,11 @@ export const Details = styled.div`
   @media (max-width: 680px) {
     margin-bottom: 2rem;
   }
+  p {
+    align-items: center;
+  }
+  .icon {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
 `

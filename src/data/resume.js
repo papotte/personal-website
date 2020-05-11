@@ -22,8 +22,8 @@ export default {
       "startDate": "2019-07-01",
       "endDate": "",
       "summary": "Moved to Berlin to join the PwC's DigiSpace as a full-stack developer",
-      "highlights": [],
-      "tags": ["java", "typescript", "vuejs", "docker", "gitlab ci"]
+      "Proficientlights": [],
+      "tags": ["java", "typescript", "vuejs", "docker", "kubernetes", "gitlab ci"]
     },
     {
       "company": "new frontiers Software",
@@ -33,7 +33,7 @@ export default {
       "endDate": "2019-06-30",
       "summary": "During my master studies, started working part-time as a developer doing web and hybrid" +
         " applications",
-      "highlights": [],
+      "Proficientlights": [],
       "tags": ["javascript", "android", "ionic", "angular", "vuejs", "nestjs", "git"]
     },
     {
@@ -42,17 +42,17 @@ export default {
       "startDate": "2015-04-01",
       "endDate": "2015-11-30",
       "summary": "Back in Colombia, started working for a startup, digitizing the business of public advertisement",
-      "highlights": [],
+      "Proficientlights": [],
       "tags": ["javascript", "php", "angularjs", "git"]
     },
     {
-      "company": "naturefund e.V",
+      "company": "Naturefund e.V",
       "position": "IT Specialist",
       "website": "https://www.naturefund.de/",
       "startDate": "2013-11-25",
       "endDate": "2014-11-30",
       "summary": "Moved to Wiesbaden, Germany to work as a mobile app developer",
-      "highlights": [],
+      "Proficientlights": [],
       "tags": ["javascript", "cordova", "closure", "svn"]
     }
   ],
@@ -74,7 +74,7 @@ export default {
   "skills": [
     {
       "name": "Java",
-      "level": "Advanced",
+      "level": "Proficient",
       "keywords": ["Development", "Language"]
     },
     {
@@ -124,17 +124,17 @@ export default {
     },
     {
       "name": "Unit Testing",
-      "level": "Intermediate",
+      "level": "Proficient",
       "keywords": ["Development", "Tools"]
     },
     {
       "name": "E2E Testing",
-      "level": "Intermediate",
+      "level": "Proficient",
       "keywords": ["Development", "Tools"]
     },
     {
-      "name": "MySQL",
-      "level": "Advanced",
+      "name": "SQL",
+      "level": "Proficient",
       "keywords": ["Development", "Language"]
     },
     {

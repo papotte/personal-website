@@ -2,7 +2,8 @@ import React from 'react'
 
 const progress = {
   Advanced: 100,
-  Intermediate: 66,
+  Proficient: 80,
+  Intermediate: 55,
   Basic: 33
 }
 

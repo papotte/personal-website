@@ -1,4 +1,4 @@
-import Data from '../../../data/config'
+import Data from 'data/config'
 
 export default [
   {
