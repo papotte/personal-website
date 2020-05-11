@@ -46,4 +46,10 @@ export const Details = styled.div`
     line-height: 1.3;
     color: #707070;
   }
+  
+  .column {
+    .icon {
+      margin-bottom: 10px;
+    }
+  }
 `

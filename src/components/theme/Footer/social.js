@@ -5,24 +5,24 @@ export default [
     id: 0,
     name: 'Github',
     link: Data.socialLinks.github,
-    icon: '/icons/github.svg'
+    icon: 'github'
   },
   {
     id: 1,
     name: 'LinkedIn',
     link: Data.socialLinks.linkedin,
-    icon: '/icons/linkedin.svg'
+    icon: 'linkedin'
   },
   {
     id: 2,
     name: 'Telegram',
     link: Data.socialLinks.telegram,
-    icon: '/icons/telegram.svg'
+    icon: 'telegram'
   },
   {
     id: 3,
     name: 'Instagram',
     link: Data.socialLinks.instagram,
-    icon: '/icons/instagram.svg'
+    icon: 'instagram'
   }
 ]

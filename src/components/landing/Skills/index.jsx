@@ -1,6 +1,3 @@
-import codeIcon from 'assets/icons/code.svg'
-import cogsIcon from 'assets/icons/cogs.svg'
-import laptopIcon from 'assets/icons/laptop.svg'
 import {Container} from 'components/common'
 import Resume from 'data/resume.js'
 import React from 'react'
@@ -20,7 +17,7 @@ export const Skills = () => (
             <div className="column">
               <div className="has-text-centered">
               <span className="icon is-large">
-                <img src={codeIcon} alt="code" />
+                <i className="fi icon-code"></i>
               </span>
                 <h2 className="title is-5 has-text-dark">Languages</h2>
               </div>
@@ -36,7 +33,7 @@ export const Skills = () => (
             <div className="column">
               <div className="has-text-centered">
               <span className="icon is-large">
-                <img src={laptopIcon} alt="laptop" />
+                <i className="fi icon-laptop"></i>
               </span>
                 <h2 className="title is-5 has-text-dark">Frameworks</h2>
               </div>
@@ -52,8 +49,8 @@ export const Skills = () => (
           </div>
           <div className="column is-6">
             <div className="has-text-centered">
-              <span className="icon is-large has-text-accent">
-                <img src={cogsIcon} alt="cogs" />
+              <span className="icon is-large">
+                <i className="fi icon-cog"></i>
               </span>
               <h2 className="title is-5 has-text-dark">Tools</h2>
             </div>
