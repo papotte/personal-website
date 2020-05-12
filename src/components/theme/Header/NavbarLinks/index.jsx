@@ -1,21 +1,20 @@
+import {FormattedMessage} from 'gatsby-plugin-intl'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {Wrapper} from './styles'
 
+function NavLink({name}) {
+  return <AnchorLink className="is-dark" href={'#' + name}>
+    <FormattedMessage id={'nav.' + name} />
+  </AnchorLink>
+}
+
 const NavbarLinks = ({desktop}) => (
   <Wrapper desktop={desktop}>
-    <AnchorLink className="is-dark" href="#about">
-      About
-    </AnchorLink>
-    <AnchorLink className="is-dark" href="#skills">
-      Skills
-    </AnchorLink>
-    <AnchorLink className="is-dark" href="#experience">
-      Experience
-    </AnchorLink>
-    <AnchorLink className="is-dark" href="#contact">
-      Contact
-    </AnchorLink>
+    <NavLink name="about" />
+    <NavLink name="skills" />
+    <NavLink name="experience" />
+    <NavLink name="contact" />
   </Wrapper>
 )
 

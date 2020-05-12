@@ -1,5 +1,6 @@
 import {Container} from 'components/common'
 import Data from 'data/config'
+import {FormattedMessage} from 'gatsby-plugin-intl'
 import React from 'react'
 import social from './social'
 import {Details, Flex, Links, Wrapper} from './styles'
@@ -10,19 +11,29 @@ export const Footer = () => (
       <Details>
         <h2>{Data.legalName}</h2>
         <p>
-          © All rights are reserved | {Data.foundingDate} | Made with{' '}
-          <span className="icon has-text-danger is-small">
-            <i className="fi icon-heart"></i>
-          </span>{' '}
-          by{' '}
-          <a href={Data.url} rel="noopener noreferrer" target="_blank">
-            {Data.author}
-          </a>{' '}
-          with{' '}
-          <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank"
-             className="icon has-text-react is-small" aria-label="ReactJS">
-            <i className="fi icon-react"></i>
-          </a>
+
+          <FormattedMessage id={'footer.rights'} /> | {Data.foundingDate} |{' '}
+          <FormattedMessage
+            id={'footer.sth'}
+            defaultMessage="Made with <i>heart</i> by <a>author</a> with <react>react</react>"
+            values={{
+              i: (...chunks) => (
+                <span className="icon has-text-danger is-small">
+                  <i className={'fi icon-' + chunks}></i>
+                </span>
+              ),
+              a: () => (
+                <a href={Data.url} rel="noopener noreferrer" target="_blank">
+                  {Data.author}
+                </a>
+              ),
+              react: () => (
+                <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank"
+                   className="icon has-text-react is-small" aria-label="ReactJS">
+                  <i className="fi icon-react"></i>
+                </a>
+              )
+            }} />
         </p>
       </Details>
       <Links>

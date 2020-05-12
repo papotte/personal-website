@@ -1,6 +1,7 @@
 export default {
   basics: {
-    name: 'Rossana Bermudez',
+    firstName: 'Rossana',
+    lastName: 'Bermudez',
     label: 'Software Engineer',
     picture: 'images/photo.jpg',
     x_title: '/favicon/icon.svg',
@@ -22,7 +23,7 @@ export default {
       website: 'https://www.pwc.de',
       startDate: '2019-07-01',
       endDate: '',
-      summary: "Moved to Berlin to join the PwC's DigiSpace as a full-stack developer",
+      summary: "Moved to Berlin to join PwC's DigiSpace as a full-stack developer",
       Proficientlights: [],
       tags: ['java', 'typescript', 'vuejs', 'docker', 'kubernetes', 'gitlab ci']
     },

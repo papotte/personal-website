@@ -1,0 +1,12 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "© All rights are reserved",
+    "made": "Made with <span><i className=\"fi icon-heart\"></i></span> by {name} with "
+  }
+}
