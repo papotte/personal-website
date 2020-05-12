@@ -1,4 +1,4 @@
-import dev from 'assets/illustrations/dev4.svg'
+import dev from 'assets/illustrations/simple-dev.svg'
 import {Container} from 'components/common'
 import {Header} from 'components/theme'
 import Data from 'data/config'

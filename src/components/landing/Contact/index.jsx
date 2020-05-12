@@ -1,6 +1,6 @@
 import {Container} from 'components/common'
 import React from 'react'
-import contact from '../../../assets/illustrations/contact.svg'
+import contact from 'assets/illustrations/talk.svg'
 import ContactForm from './ContactForm'
 import {Details, Thumbnail, Wrapper} from './styles'
 

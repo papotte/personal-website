@@ -7,7 +7,7 @@
 - PWA (desktop & mobile)
 - Easy to customize
 - Nice project structure
-- Amazing illustrations by [Undraw.co](https://undraw.co)
+- Amazing illustrations by [Undraw.co](https://undraw.co) and [stories](https://www.freepik.com/stories)
 - Tablet & mobile friendly
 - Continuous deployment with Github & Netlify
 - A contact form protected by Google Recaptcha

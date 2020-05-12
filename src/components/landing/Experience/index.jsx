@@ -1,4 +1,4 @@
-import dev from 'assets/illustrations/skills.svg'
+import dev from 'assets/illustrations/world.svg'
 import {Container} from 'components/common'
 import React from 'react'
 import {Details, ExperienceWrapper, Wrapper} from './styles'
