@@ -1,5 +1,6 @@
 import {Container} from 'components/common'
 import Resume from 'data/resume'
+import {FormattedMessage} from "gatsby-plugin-intl"
 import React from 'react'
 import {Details} from '../Experience/styles'
 import SkillsList from './SkillsList'
@@ -10,7 +11,7 @@ export const Skills = () => (
   <Wrapper id="skills">
     <SkillsWrapper as={Container}>
       <Details>
-        <h1 className="title">Languages and tools</h1>
+        <h1 className="title"><FormattedMessage id={'sections.skills'} /></h1>
         <div className="columns">
           <div className="column is-6">
             <div className="column">

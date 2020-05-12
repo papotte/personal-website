@@ -1,4 +1,5 @@
 import axios from 'axios'
+import {Input} from 'components/common'
 import {ErrorMessage, FastField, Form, Formik} from 'formik'
 import React from 'react'
 import Recaptcha from 'react-google-recaptcha'
@@ -48,7 +49,8 @@ export default () => (
     {({values, touched, errors, setFieldValue, isSubmitting}) => (
       <Form>
         <InputField>
-          <FastField
+          <Input
+            as={FastField}
             className={inputStyle}
             type="text"
             name="name"
@@ -60,7 +62,8 @@ export default () => (
           <ErrorMessage component={Error} name="name" className="has-text-danger" />
         </InputField>
         <InputField>
-          <FastField
+          <Input
+            as={FastField}
             id="email"
             aria-label="email"
             component="input"
@@ -73,7 +76,8 @@ export default () => (
           <ErrorMessage component={Error} name="email" className="has-text-danger" />
         </InputField>
         <InputField>
-          <FastField
+          <Input
+            as={FastField}
             className={inputStyle}
             component="textarea"
             aria-label="message"

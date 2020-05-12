@@ -4,5 +4,33 @@
     "skills": "Fähigkeiten",
     "experience": "Berufserfahrung",
     "contact": "Kontakt"
+  },
+  "buttons": {
+    "contact": "Kontakt",
+    "submit": "Senden"
+  },
+  "inputs": {
+    "name": {
+      "label": "Vor- und Nachname"
+    },
+    "email": {
+      "label": "E-Mail"
+    },
+    "message": {
+      "label": "Nachricht"
+    }
+  },
+  "footer": {
+    "rights": "© All rights are reserved",
+    "made": "Made with <span><i className=\"fi icon-heart\"></i></span> by {name} with "
+  },
+  "sections": {
+    "about": {
+      "title": "Hi There!",
+      "subtitle": "I'm Rossana and I'm a Software engineer!"
+    },
+    "skills": "Fähigkeiten",
+    "experience": "Berufserfahrung",
+    "contact": "Fragen?"
   }
 }
