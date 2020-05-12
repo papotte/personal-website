@@ -1,12 +1,31 @@
 import axios from 'axios'
 import {Input} from 'components/common'
 import {ErrorMessage, FastField, Form, Formik} from 'formik'
+import {useIntl} from 'gatsby-plugin-intl'
 import React from 'react'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import {Center, Error, InputField} from './styles'
 
-const inputStyle = 'input is-primary'
+
+function GetInput({name, error, component = 'input', rows}) {
+  const intl = useIntl()
+  return <InputField>
+    <Input
+      as={FastField}
+      className={component + ' is-primary'}
+      type="text"
+      name={name}
+      component={component}
+      rows={rows}
+      aria-label={name}
+      placeholder={intl.formatMessage({id: `inputs.${name}.label`}) + '*'}
+      error={error}
+    />
+    <div className="has-text-danger"><ErrorMessage name={name} /></div>
+  </InputField>
+}
+
 export default () => (
   <Formik
     initialValues={{
@@ -48,48 +67,11 @@ export default () => (
   >
     {({values, touched, errors, setFieldValue, isSubmitting}) => (
       <Form>
-        <InputField>
-          <Input
-            as={FastField}
-            className={inputStyle}
-            type="text"
-            name="name"
-            component="input"
-            aria-label="name"
-            placeholder="Full name*"
-            error={touched.name && errors.name}
-          />
-          <ErrorMessage component={Error} name="name" className="has-text-danger" />
-        </InputField>
-        <InputField>
-          <Input
-            as={FastField}
-            id="email"
-            aria-label="email"
-            component="input"
-            className={inputStyle}
-            type="email"
-            name="email"
-            placeholder="Email*"
-            error={touched.email && errors.email}
-          />
-          <ErrorMessage component={Error} name="email" className="has-text-danger" />
-        </InputField>
-        <InputField>
-          <Input
-            as={FastField}
-            className={inputStyle}
-            component="textarea"
-            aria-label="message"
-            id="message"
-            rows="8"
-            type="text"
-            name="message"
-            placeholder="Message*"
-            error={touched.message && errors.message}
-          />
-          <ErrorMessage component={Error} name="message" className="has-text-danger" />
-        </InputField>
+        <GetInput name="name" error={touched.name && errors.name} />
+        <GetInput name="email" error={touched.email && errors.email} />
+        <GetInput name="message" error={touched.message && errors.message}
+                  component="textarea"
+                  rows="8" />
         {values.name && values.email && values.message && (
           <InputField>
             <FastField
