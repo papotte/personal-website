@@ -11,11 +11,9 @@ export const Footer = () => (
       <Details>
         <h2>{Data.legalName}</h2>
         <p>
-
           <FormattedMessage id={'footer.rights'} /> | {Data.foundingDate} |{' '}
           <FormattedMessage
-            id={'footer.sth'}
-            defaultMessage="Made with <i>heart</i> by <a>author</a> with <react>react</react>"
+            id={'footer.made'}
             values={{
               i: (...chunks) => (
                 <span className="icon has-text-danger is-small">

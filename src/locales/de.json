@@ -20,9 +20,12 @@
       "label": "Nachricht"
     }
   },
+  "messages": {
+    "messageSent": "Danke für Deine Nachricht - ich melde mich schnellstmöglich bei Dir."
+  },
   "footer": {
     "rights": "© All rights are reserved",
-    "made": "Made with <span><i className=\"fi icon-heart\"></i></span> by {name} with "
+    "made": "Made with <i>heart</i> by <a>author</a> with <react>react</react>"
   },
   "sections": {
     "about": {

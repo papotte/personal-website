@@ -1,7 +1,7 @@
 import axios from 'axios'
 import {Input} from 'components/common'
 import {ErrorMessage, FastField, Form, Formik} from 'formik'
-import {useIntl} from 'gatsby-plugin-intl'
+import {FormattedMessage, useIntl} from 'gatsby-plugin-intl'
 import React from 'react'
 import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
@@ -86,13 +86,13 @@ export default () => (
         {values.success && (
           <InputField>
             <Center className="has-text-success">
-              <h4>Your message has been successfully sent, I will get back to you ASAP!</h4>
+              <h4><FormattedMessage id={'messages.messageSent'} /></h4>
             </Center>
           </InputField>
         )}
         <Center>
           <button className="button is-dark-blue" type="submit" disabled={isSubmitting}>
-            Submit
+            <FormattedMessage id={'buttons.submit'} />
           </button>
         </Center>
       </Form>
