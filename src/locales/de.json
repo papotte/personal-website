@@ -5,6 +5,17 @@
     "experience": "Berufserfahrung",
     "contact": "Kontakt"
   },
+  "lang": {
+    "en": {
+      "long": "Englisch"
+    },
+    "de": {
+      "long": "Deutsch"
+    },
+    "es": {
+      "long": "Spanisch"
+    }
+  },
   "buttons": {
     "contact": "Kontakt",
     "submit": "Senden"

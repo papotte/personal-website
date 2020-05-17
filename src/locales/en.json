@@ -5,6 +5,20 @@
     "experience": "Experience",
     "contact": "Contact"
   },
+  "lang": {
+    "en": {
+      "short": "en",
+      "long": "English"
+    },
+    "de": {
+      "short": "de",
+      "long": "German"
+    },
+    "es": {
+      "short": "es",
+      "long": "Spanish"
+    }
+  },
   "buttons": {
     "contact": "Contact",
     "submit": "Submit"
