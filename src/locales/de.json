@@ -46,7 +46,18 @@
       "title": "Willkommen!",
       "subtitle": "Ich bin Rossana und ich bin Software-Ingenieur!"
     },
-    "skills": "Fähigkeiten",
+    "skills": {
+      "title": "Fähigkeiten",
+      "languages": "Programmiersprachen",
+      "tools": "Tools",
+      "frameworks": "Frameworks",
+      "level": {
+        "Advanced": "Fortgeschritten",
+        "Proficient": "Kompetent",
+        "Intermediate": "Ausreichend",
+        "Basic": "Elementar"
+      }
+    },
     "experience": "Berufserfahrung",
     "contact": "Fragen?"
   }

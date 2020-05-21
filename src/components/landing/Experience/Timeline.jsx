@@ -9,10 +9,10 @@ function Timeline() {
         <span className="tag is-medium is-dark">{new Date().getFullYear()}</span>
       </header>
       <div className="timeline-item">
-        <div className="timeline-marker is-accent"></div>
-        <div className="timeline-content"></div>
+        <div className="timeline-marker is-accent"/>
+        <div className="timeline-content"/>
       </div>
-      {Resume.work
+      {Resume().work
         .map(item => {
           return new Date(item.startDate).getFullYear()
         })
@@ -24,16 +24,13 @@ function Timeline() {
             </header>
           )
           content.push(
-            Resume.work
+            Resume().work
               .filter(work => new Date(work.startDate).getFullYear() === year)
               .map((item, j) => {
                 return (
                   <TimelineItem
                     key={j}
-                    date={new Date(item.startDate).toLocaleString('en-UK', {
-                      month: 'long',
-                      year: 'numeric'
-                    })}
+                    date={item.startDate}
                     company={item.company}
                     summary={item.summary}
                     tags={item.tags}

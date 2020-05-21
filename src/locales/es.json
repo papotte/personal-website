@@ -46,7 +46,18 @@
       "title": "Hola!",
       "subtitle": "Mi nombre es Rossana y soy ingeniera de sistemas"
     },
-    "skills": "Lenguages",
+    "skills": {
+      "title": "Habilidades",
+      "languages": "Lenguages",
+      "tools": "Herramientas",
+      "frameworks": "Frameworks",
+      "level": {
+        "Advanced": "Avanzado",
+        "Proficient": "Competente",
+        "Intermediate": "Medio",
+        "Basic": "Básico"
+      }
+    },
     "experience": "Experiencia de trabajo",
     "contact": "Quieres saber más?"
   }

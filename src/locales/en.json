@@ -46,7 +46,18 @@
       "title": "Hi There!",
       "subtitle": "I'm Rossana and I'm a Software engineer!"
     },
-    "skills": "Languages and Tools",
+    "skills": {
+      "title": "Languages and Tools",
+      "languages": "Languages",
+      "tools": "Tools",
+      "frameworks": "Frameworks",
+      "level": {
+        "Advanced": "Advanced",
+        "Proficient": "Proficient",
+        "Intermediate": "Intermediate",
+        "Basic": "Basic"
+      }
+    },
     "experience": "Work Experience",
     "contact": "Want to know more?"
   }

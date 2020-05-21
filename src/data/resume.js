@@ -1,4 +1,6 @@
-export default {
+import {useTranslation} from 'gatsby-plugin-intl'
+
+const def = {
   basics: {
     firstName: 'Rossana',
     lastName: 'Bermudez',
@@ -23,7 +25,7 @@ export default {
       website: 'https://www.pwc.de',
       startDate: '2019-07-01',
       endDate: '',
-      summary: "Moved to Berlin to join PwC's DigiSpace as a full-stack developer",
+      summary: 'Moved to Berlin to join PwC\'s DigiSpace as a full-stack developer',
       Proficientlights: [],
       tags: ['java', 'typescript', 'vuejs', 'docker', 'kubernetes', 'gitlab ci']
     },
@@ -181,4 +183,18 @@ export default {
       x_icon: 'fa-brain'
     }
   ]
+}
+
+const es = {
+  basics: {
+    label: 'Ingeniera de Sistemas',
+    summary:
+      'Tengo casi 4 años de experiencia en desarrollo de software. ' +
+      'Estos días estoy enfocada en el desarrollo de frontend y experiencia de usuario. ' +
+      'En general, me interesa todo el mundo de la automatización y desarrollo de aplicaciones, tando en backend' +
+      ' como en frontend!'
+  }
+}
+export default (lang) => {
+  return def
 }

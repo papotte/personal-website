@@ -1,25 +1,27 @@
 import {Container} from 'components/common'
 import Resume from 'data/resume'
-import {FormattedMessage} from "gatsby-plugin-intl"
+import {FormattedMessage} from 'gatsby-plugin-intl'
 import React from 'react'
 import {Details} from '../Experience/styles'
 import SkillsList from './SkillsList'
 import {SkillsWrapper, Wrapper} from './styles'
 
-const skills = Resume.skills || []
+const skills = Resume().skills || []
 export const Skills = () => (
   <Wrapper id="skills">
     <SkillsWrapper as={Container}>
       <Details>
-        <h1 className="title"><FormattedMessage id={'sections.skills'} /></h1>
+        <h1 className="title"><FormattedMessage id={'sections.skills.title'} /></h1>
         <div className="columns">
           <div className="column is-6">
             <div className="column">
               <div className="has-text-centered">
                 <span className="icon is-large">
-                  <i className="fi icon-code"></i>
+                  <i className="fi icon-code"/>
                 </span>
-                <h2 className="title is-5 has-text-dark">Languages</h2>
+                <h2 className="title is-5 has-text-dark">
+                  <FormattedMessage id={'sections.skills.languages'} />
+                </h2>
               </div>
               <SkillsList
                 skills={skills
@@ -33,9 +35,11 @@ export const Skills = () => (
             <div className="column">
               <div className="has-text-centered">
                 <span className="icon is-large">
-                  <i className="fi icon-laptop"></i>
+                  <i className="fi icon-laptop"/>
                 </span>
-                <h2 className="title is-5 has-text-dark">Frameworks</h2>
+                <h2 className="title is-5 has-text-dark">
+                  <FormattedMessage id={'sections.skills.frameworks'} />
+                </h2>
               </div>
               <SkillsList
                 skills={skills
@@ -50,9 +54,11 @@ export const Skills = () => (
           <div className="column is-6">
             <div className="has-text-centered">
               <span className="icon is-large">
-                <i className="fi icon-cog"></i>
+                <i className="fi icon-cog"/>
               </span>
-              <h2 className="title is-5 has-text-dark">Tools</h2>
+              <h2 className="title is-5 has-text-dark">
+                <FormattedMessage id={'sections.skills.tools'} />
+              </h2>
             </div>
             <SkillsList
               skills={skills

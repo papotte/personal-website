@@ -1,3 +1,4 @@
+import {FormattedMessage} from 'gatsby-plugin-intl'
 import React from 'react'
 
 const progress = {
@@ -12,7 +13,9 @@ function ProgressBar(props) {
   return (
     <div>
       <span className="title is-6 is-spaced has-text-dark">{text}</span>
-      <span className="subtitle is-7 skill-percentage">{level}</span>
+      <span className="subtitle is-7 skill-percentage">
+        <FormattedMessage id={'sections.skills.level.' + level} />
+      </span>
       <progress className="progress is-accent" value={progress[level]} max="100">
         {progress[level]}%
       </progress>
