@@ -4,6 +4,7 @@ import React from 'react'
 import NavbarLinks from '../NavbarLinks'
 import {Wrapper} from './styles'
 
+
 const Navbar = () => (
   <Wrapper as={Container}>
     <div>

@@ -37,24 +37,32 @@ a {
 
 .icon {
   .fi {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   &.is-small {
     .fi {
-      font-size: 1rem;
+      font-size: 1rem !important;
     }
   }
 
   &.is-medium {
     .fi {
-      font-size: 2rem;
+      font-size: 2rem !important;
     }
   }
 
   &.is-large {
     .fi {
-      font-size: 3rem;
+      font-size: 3rem !important;
+    }
+  }
+}
+
+.dropdown {
+  .link {
+    i.icon-chevron-down {
+      margin-left: 20px;
     }
   }
 }

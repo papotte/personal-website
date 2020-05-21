@@ -5,6 +5,20 @@
     "experience": "Berufserfahrung",
     "contact": "Kontakt"
   },
+  "lang": {
+    "en": {
+      "short": "en",
+      "long": "Englisch"
+    },
+    "de": {
+      "short": "de",
+      "long": "Deutsch"
+    },
+    "es": {
+      "short": "es",
+      "long": "Spanisch"
+    }
+  },
   "buttons": {
     "contact": "Kontakt",
     "submit": "Senden"
@@ -24,15 +38,41 @@
     "messageSent": "Danke für Deine Nachricht - ich melde mich schnellstmöglich bei Dir."
   },
   "footer": {
-    "rights": "© All rights are reserved",
+    "rights": "© Alle Rechte sind vorbehalten",
     "made": "Made with <i>heart</i> by <a>author</a> with <react>react</react>"
   },
   "sections": {
     "about": {
-      "title": "Hi There!",
-      "subtitle": "I'm Rossana and I'm a Software engineer!"
+      "title": "Willkommen!"
     },
-    "skills": "Fähigkeiten",
+    "studies": {
+      "type": {
+        "master": "Master",
+        "bachelor": "Bachelor",
+        "msc": "MSc.",
+        "bsc": "BSc."
+      }
+    },
+    "languages": {
+      "level": {
+        "native": "Muttersprache",
+        "fluent": "Fließend",
+        "intermediate": "Gute Kenntnisse",
+        "basic": "Grundkenntnisse"
+      }
+    },
+    "skills": {
+      "title": "Fähigkeiten",
+      "languages": "Programmiersprachen",
+      "tools": "Tools",
+      "frameworks": "Frameworks",
+      "level": {
+        "Advanced": "Fortgeschritten",
+        "Proficient": "Kompetent",
+        "Intermediate": "Ausreichend",
+        "Basic": "Elementar"
+      }
+    },
     "experience": "Berufserfahrung",
     "contact": "Fragen?"
   }

@@ -16,13 +16,14 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp', {
+    'gatsby-plugin-sharp',
+    {
       resolve: `gatsby-plugin-intl`,
       options: {
         // language JSON resource path
         path: `${__dirname}/src/locales`,
         // supported language
-        languages: [`en`, `de`],
+        languages: [`en`, `de`, `es`],
         // language file path
         defaultLanguage: `en`,
         // option to redirect to `/ko` when connecting `/`

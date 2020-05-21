@@ -5,6 +5,20 @@
     "experience": "Experience",
     "contact": "Contact"
   },
+  "lang": {
+    "en": {
+      "short": "en",
+      "long": "English"
+    },
+    "de": {
+      "short": "de",
+      "long": "German"
+    },
+    "es": {
+      "short": "es",
+      "long": "Spanish"
+    }
+  },
   "buttons": {
     "contact": "Contact",
     "submit": "Submit"
@@ -29,10 +43,36 @@
   },
   "sections": {
     "about": {
-      "title": "Hi There!",
-      "subtitle": "I'm Rossana and I'm a Software engineer!"
+      "title": "Hi There!"
     },
-    "skills": "Languages and Tools",
+    "skills": {
+      "title": "Languages and Tools",
+      "languages": "Languages",
+      "tools": "Tools",
+      "frameworks": "Frameworks",
+      "level": {
+        "Advanced": "Advanced",
+        "Proficient": "Proficient",
+        "Intermediate": "Intermediate",
+        "Basic": "Basic"
+      }
+    },
+    "studies": {
+      "type": {
+        "master": "Master",
+        "bachelor": "Bachelor",
+        "msc": "MSc.",
+        "bsc": "BSc."
+      }
+    },
+    "languages": {
+      "level": {
+        "native": "Native speaker",
+        "fluent": "Fluent",
+        "intermediate": "Intermediate",
+        "basic": "Basic"
+      }
+    },
     "experience": "Work Experience",
     "contact": "Want to know more?"
   }

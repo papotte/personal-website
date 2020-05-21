@@ -1,16 +1,19 @@
 import Resume from 'data/resume'
 import React from 'react'
 import TimelineItem from './TimelineItem'
+import {useIntl} from 'gatsby-plugin-intl'
 
-function Timeline() {
+const Timeline = () => {
+  const intl = useIntl()
+  const locale = intl.locale;
   return (
     <div className="timeline is-centered">
       <header className="timeline-header">
         <span className="tag is-medium is-dark">{new Date().getFullYear()}</span>
       </header>
       <div className="timeline-item">
-        <div className="timeline-marker is-accent"></div>
-        <div className="timeline-content"></div>
+        <div className="timeline-marker is-accent" />
+        <div className="timeline-content" />
       </div>
       {Resume.work
         .map(item => {
@@ -30,12 +33,9 @@ function Timeline() {
                 return (
                   <TimelineItem
                     key={j}
-                    date={new Date(item.startDate).toLocaleString('en-UK', {
-                      month: 'long',
-                      year: 'numeric'
-                    })}
+                    date={item.startDate}
                     company={item.company}
-                    summary={item.summary}
+                    summary={item.summary[locale]}
                     tags={item.tags}
                   />
                 )

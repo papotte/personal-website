@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "lang": {
+    "en": {
+      "short": "en",
+      "long": "Inglés"
+    },
+    "de": {
+      "short": "de",
+      "long": "Alemán"
+    },
+    "es": {
+      "short": "es",
+      "long": "Español"
+    }
+  },
+  "buttons": {
+    "contact": "Contáctame!",
+    "submit": "Enviar"
+  },
+  "inputs": {
+    "name": {
+      "label": "Nombre"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "message": {
+      "label": "Mensaje"
+    }
+  },
+  "messages": {
+    "messageSent": "Tu mensaje ha sido enviado. Intentaré ponerme en contacto contigo muy pronto!"
+  },
+  "footer": {
+    "rights": "© Todos los derechos reservados",
+    "made": "Made with <i>heart</i> by <a>author</a> with <react>react</react>"
+  },
+  "sections": {
+    "about": {
+      "title": "Hola!"
+    },
+    "studies": {
+      "type": {
+        "master": "Maestría",
+        "bachelor": "Grado",
+        "msc": "MSc.",
+        "bsc": "BSc."
+      }
+    },
+    "languages": {
+      "level": {
+        "native": "Lengua materna",
+        "fluent": "Competente",
+        "intermediate": "Intermedio",
+        "basic": "Básico"
+      }
+    },
+    "skills": {
+      "title": "Habilidades",
+      "languages": "Lenguages",
+      "tools": "Herramientas",
+      "frameworks": "Frameworks",
+      "level": {
+        "Advanced": "Avanzado",
+        "Proficient": "Competente",
+        "Intermediate": "Medio",
+        "Basic": "Básico"
+      }
+    },
+    "experience": "Experiencia de trabajo",
+    "contact": "Quieres saber más?"
+  }
+}
