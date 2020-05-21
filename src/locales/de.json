@@ -43,8 +43,23 @@
   },
   "sections": {
     "about": {
-      "title": "Willkommen!",
-      "subtitle": "Ich bin Rossana und ich bin Software-Ingenieur!"
+      "title": "Willkommen!"
+    },
+    "studies": {
+      "type": {
+        "master": "Master",
+        "bachelor": "Bachelor",
+        "msc": "MSc.",
+        "bsc": "BSc."
+      }
+    },
+    "languages": {
+      "level": {
+        "native": "Muttersprache",
+        "fluent": "Fließend",
+        "intermediate": "Gute Kenntnisse",
+        "basic": "Grundkenntnisse"
+      }
     },
     "skills": {
       "title": "Fähigkeiten",

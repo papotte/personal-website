@@ -43,8 +43,23 @@
   },
   "sections": {
     "about": {
-      "title": "Hola!",
-      "subtitle": "Mi nombre es Rossana y soy ingeniera de sistemas"
+      "title": "Hola!"
+    },
+    "studies": {
+      "type": {
+        "master": "Maestría",
+        "bachelor": "Grado",
+        "msc": "MSc.",
+        "bsc": "BSc."
+      }
+    },
+    "languages": {
+      "level": {
+        "native": "Lengua materna",
+        "fluent": "Competente",
+        "intermediate": "Intermedio",
+        "basic": "Básico"
+      }
     },
     "skills": {
       "title": "Habilidades",

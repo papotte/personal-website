@@ -1,7 +1,7 @@
 import React from 'react'
 import {FormattedDate} from 'gatsby-plugin-intl'
 
-function TimelineItem(props) {
+const TimelineItem = (props) => {
   return (
     <div className="timeline-item is-accent">
       <div className="timeline-marker is-icon">

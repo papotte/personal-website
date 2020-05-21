@@ -9,9 +9,9 @@ const Navbar = () => (
   <Wrapper as={Container}>
     <div>
       <a to="/" className="title is-dark">
-        <span>{Resume().basics.firstName}</span>
+        <span>{Resume.basics.firstName}</span>
         &nbsp;
-        <span className="has-text-weight-normal">{Resume().basics.lastName}</span>
+        <span className="has-text-weight-normal">{Resume.basics.lastName}</span>
       </a>
     </div>
     <NavbarLinks desktop />

@@ -43,8 +43,7 @@
   },
   "sections": {
     "about": {
-      "title": "Hi There!",
-      "subtitle": "I'm Rossana and I'm a Software engineer!"
+      "title": "Hi There!"
     },
     "skills": {
       "title": "Languages and Tools",
@@ -56,6 +55,22 @@
         "Proficient": "Proficient",
         "Intermediate": "Intermediate",
         "Basic": "Basic"
+      }
+    },
+    "studies": {
+      "type": {
+        "master": "Master",
+        "bachelor": "Bachelor",
+        "msc": "MSc.",
+        "bsc": "BSc."
+      }
+    },
+    "languages": {
+      "level": {
+        "native": "Native speaker",
+        "fluent": "Fluent",
+        "intermediate": "Intermediate",
+        "basic": "Basic"
       }
     },
     "experience": "Work Experience",
