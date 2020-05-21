@@ -1,16 +1,18 @@
-import {FormattedMessage} from 'gatsby-plugin-intl'
+import {changeLocale, FormattedMessage} from 'gatsby-plugin-intl'
 import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import {Dropdown} from '../../../common/Dropdown'
+import {NavbarMenu} from '../NavbarMenu'
 import {Wrapper} from './styles'
 
 const options = [
-  {displayName: 'English', value: 'en'}
+  {key: 'lang.en', displayName: 'long', value: 'short'},
+  {key: 'lang.de', displayName: 'long', value: 'short'},
+  {key: 'lang.es', displayName: 'long', value: 'short'}
 ]
 
 function LanguageSelector() {
-  return <Dropdown options={options} onChange={(item) => {
-    console.log(item)
+  return <NavbarMenu icon="language" intl={true} options={options} onChange={(item) => {
+    changeLocale(item)
   }} />
 }
 

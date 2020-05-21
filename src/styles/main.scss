@@ -59,4 +59,12 @@ a {
   }
 }
 
+.dropdown {
+  .link {
+    i.icon-chevron-down {
+      margin-left: 20px;
+    }
+  }
+}
+
 @import "~bulma-timeline";

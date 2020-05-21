@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "lang": {
+    "en": {
+      "short": "en",
+      "long": "Inglés"
+    },
+    "de": {
+      "short": "de",
+      "long": "Alemán"
+    },
+    "es": {
+      "short": "es",
+      "long": "Español"
+    }
+  },
+  "buttons": {
+    "contact": "Contáctame!",
+    "submit": "Enviar"
+  },
+  "inputs": {
+    "name": {
+      "label": "Nombre"
+    },
+    "email": {
+      "label": "Email"
+    },
+    "message": {
+      "label": "Mensaje"
+    }
+  },
+  "messages": {
+    "messageSent": "Tu mensaje ha sido enviado. Intentaré ponerme en contacto contigo muy pronto!"
+  },
+  "footer": {
+    "rights": "© Todos los derechos reservados",
+    "made": "Made with <i>heart</i> by <a>author</a> with <react>react</react>"
+  },
+  "sections": {
+    "about": {
+      "title": "Hola!",
+      "subtitle": "Mi nombre es Rossana y soy ingeniera de sistemas"
+    },
+    "skills": "Lenguages",
+    "experience": "Experiencia de trabajo",
+    "contact": "Quieres saber más?"
+  }
+}

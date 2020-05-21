@@ -7,12 +7,15 @@
   },
   "lang": {
     "en": {
+      "short": "en",
       "long": "Englisch"
     },
     "de": {
+      "short": "de",
       "long": "Deutsch"
     },
     "es": {
+      "short": "es",
       "long": "Spanisch"
     }
   },
@@ -35,13 +38,13 @@
     "messageSent": "Danke für Deine Nachricht - ich melde mich schnellstmöglich bei Dir."
   },
   "footer": {
-    "rights": "© All rights are reserved",
+    "rights": "© Alle Rechte sind vorbehalten",
     "made": "Made with <i>heart</i> by <a>author</a> with <react>react</react>"
   },
   "sections": {
     "about": {
-      "title": "Hi There!",
-      "subtitle": "I'm Rossana and I'm a Software engineer!"
+      "title": "Willkommen!",
+      "subtitle": "Ich bin Rossana und ich bin Software-Ingenieur!"
     },
     "skills": "Fähigkeiten",
     "experience": "Berufserfahrung",
