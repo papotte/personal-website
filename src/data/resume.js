@@ -10,22 +10,15 @@ const resume = {
     picture: 'images/photo.jpg',
     x_title: '/favicon/icon.svg',
     introduction: {
-      en: 'I\'m Rossana and I\'m a Software engineer!',
+      en: `I'm Rossana and I'm a Software engineer!`,
       es: 'Mi nombre es Rossana y soy ingeniera de sistemas',
       de: 'Ich bin Rossana und ich bin Software-Ingenieur!'
     },
     summary: {
-      en: 'Going on 4 years of experience in IT. ' +
-        'Currently I’m working as a developer focusing on frontend and UX. I’m interested in all' +
-        ' sorts of automation and developing front-end and back-end applications.',
-      de: 'Going on 4 years of experience in IT. ' +
-        'Currently I’m working as a developer focusing on frontend and UX. I’m interested in all' +
-        ' sorts of automation and developing front-end and back-end applications.',
-      es: 'Going on 4 years of experience in IT. ' +
-        'Currently I’m working as a developer focusing on frontend and UX. I’m interested in all' +
-        ' sorts of automation and developing front-end and back-end applications.'
+      en: `Going on 4 years of experience in IT. Currently I’m working as a developer focusing on frontend and UX. I’m interested in all sorts of automation and developing front-end and back-end applications.`,
+      de: `Going on 4 years of experience in IT. Currently I’m working as a developer focusing on frontend and UX. I’m interested in all sorts of automation and developing front-end and back-end applications.`,
+      es: `Going on 4 years of experience in IT. Currently I’m working as a developer focusing on frontend and UX. I’m interested in all sorts of automation and developing front-end and back-end applications.`
     }
-
   },
   location: {
     country: {
@@ -49,9 +42,9 @@ const resume = {
       startDate: '2019-07-01',
       endDate: '',
       summary: {
-        en: 'Moved to Berlin to join PwC\'s DigiSpace as a full-stack developer',
-        de: 'Moved to Berlin to join PwC\'s DigiSpace as a full-stack developer',
-        es: 'Moved to Berlin to join PwC\'s DigiSpace as a full-stack developer'
+        en: `Moved to Berlin to join PwC's DigiSpace as a full-stack developer`,
+        de: `Moved to Berlin to join PwC's DigiSpace as a full-stack developer`,
+        es: `Moved to Berlin to join PwC's DigiSpace as a full-stack developer`
       },
       Proficientlights: [],
       tags: ['java', 'typescript', 'vuejs', 'docker', 'kubernetes', 'gitlab ci']
