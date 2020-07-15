@@ -18,25 +18,24 @@ export const IntroWrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
-  
+
   .all-page-container {
     margin: 0 auto;
     height: 100%;
     max-height: 600px;
     overflow: auto;
   }
-  
+
   /* For pdf */
   .react-pdf__Page {
     margin-top: 0px;
   }
-  
+
   .react-pdf__Page__annotations.annotationLayer {
     padding: 0px;
   }
-  
+
   .react-pdf__Page__canvas {
     margin: 0 auto;
   }
-
 `

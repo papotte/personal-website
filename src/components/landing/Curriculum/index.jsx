@@ -6,12 +6,10 @@ import AllPages from './allPages'
 import {IntroWrapper, Wrapper} from './styles'
 import throttle from 'lodash.throttle'
 
-
 export class Curriculum extends PureComponent {
-  file = pdfFile
-
   constructor(props) {
     super(props)
+    this.file = pdfFile
     this.state = {width: null}
   }
 
@@ -24,7 +22,7 @@ export class Curriculum extends PureComponent {
     window.removeEventListener('resize', throttle(this.setDivSize, 500))
   }
 
-  setDivSize = () => {
+  setDivSize() {
     this.setState({width: this.pdfWrapper.getBoundingClientRect().width})
   }
 

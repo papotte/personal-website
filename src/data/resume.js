@@ -17,17 +17,17 @@ const resume = {
       ],
       es: [
         'Soy una ingeniera de sistemas senior con siete años de experiencia, con enfoque en desarrollo de frontends.' +
-        ' Tengo experiencia en distintos frameworks para JavaScript y Java',
+          ' Tengo experiencia en distintos frameworks para JavaScript y Java',
         'En los últimos años he estado trabajando en equipos multifunctionales y entregando productos de software de' +
-        ' calidad.',
+          ' calidad.',
         'Este website ha sido creado por mi con ReactJS, Gatsby y Netlify'
       ],
       de: [
         'Ich bin einen Senior Software-Ingenieurin mit sieben Jahren Erfahrung und einem Fokus auf' +
-        ' Frontend-Entwicklung. Ich habe umfangreiche Erfahrung im mehrere JavaScript-Frameworks sowie in das' +
-        ' Java-Ökosystem.',
+          ' Frontend-Entwicklung. Ich habe umfangreiche Erfahrung im mehrere JavaScript-Frameworks sowie in das' +
+          ' Java-Ökosystem.',
         'In den letzten Jahre habe ich in funktionsübergreifenden Teams gearbeitet und Produkte mit Blick auf die' +
-        ' Codequalität geliefert',
+          ' Codequalität geliefert',
         'Ich habe diese Website mit ReactJS und Gatsby entwickelt. Es ist im Netlify gehostet.'
       ]
     },
