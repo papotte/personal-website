@@ -20,7 +20,7 @@
     }
   },
   "buttons": {
-    "contact": "Contáctame!",
+    "contact": "Contáctame",
     "submit": "Enviar"
   },
   "inputs": {
@@ -43,7 +43,7 @@
   },
   "sections": {
     "about": {
-      "title": "Hola!"
+      "title": "Hola, soy Rossana!"
     },
     "studies": {
       "type": {

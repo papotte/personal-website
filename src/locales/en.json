@@ -20,7 +20,7 @@
     }
   },
   "buttons": {
-    "contact": "Contact",
+    "contact": "Contact me",
     "submit": "Submit"
   },
   "inputs": {
@@ -43,7 +43,7 @@
   },
   "sections": {
     "about": {
-      "title": "Hi There!"
+      "title": "Hi there, I'm Rossana!"
     },
     "skills": {
       "title": "Languages and Tools",

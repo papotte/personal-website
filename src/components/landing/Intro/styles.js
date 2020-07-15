@@ -34,18 +34,18 @@ export const Details = styled.div`
     color: #212121;
 
     @media (max-width: 680px) {
-      font-size: 30pt;
+      font-size: 26pt;
     }
   }
 
-  h4 {
+  p {
     margin-bottom: 2.5rem;
-    font-size: 32pt;
+    font-size: 16pt;
     font-weight: normal;
     color: #707070;
 
     @media (max-width: 680px) {
-      font-size: 26pt;
+      font-size: 14pt;
     }
   }
 `

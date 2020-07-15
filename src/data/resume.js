@@ -10,9 +10,26 @@ const resume = {
     picture: 'images/photo.jpg',
     x_title: '/favicon/icon.svg',
     introduction: {
-      en: `I'm Rossana and I'm a Software engineer!`,
-      es: 'Mi nombre es Rossana y soy ingeniera de sistemas',
-      de: 'Ich bin Rossana und ich bin Software-Ingenieur!'
+      en: [
+        `I'm a senior software engineer with seven years of experience and a focus on frontend development. I have extensive experience in multiple JavaScript frameworks as well as expertise in the Java ecosystem.`,
+        `For the past few years I've been working in cross-functional teams and delivering products with code quality in mind.`,
+        `I developed this website with ReactJS and Gatsby and it is hosted in Netlify`
+      ],
+      es: [
+        'Soy una ingeniera de sistemas senior con siete años de experiencia, con enfoque en desarrollo de frontends.' +
+        ' Tengo experiencia en distintos frameworks para JavaScript y Java',
+        'En los últimos años he estado trabajando en equipos multifunctionales y entregando productos de software de' +
+        ' calidad.',
+        'Este website ha sido creado por mi con ReactJS, Gatsby y Netlify'
+      ],
+      de: [
+        'Ich bin einen Senior Software-Ingenieurin mit sieben Jahren Erfahrung und einem Fokus auf' +
+        ' Frontend-Entwicklung. Ich habe umfangreiche Erfahrung im mehrere JavaScript-Frameworks sowie in das' +
+        ' Java-Ökosystem.',
+        'In den letzten Jahre habe ich in funktionsübergreifenden Teams gearbeitet und Produkte mit Blick auf die' +
+        ' Codequalität geliefert',
+        'Ich habe diese Website mit ReactJS und Gatsby entwickelt. Es ist im Netlify gehostet.'
+      ]
     },
     summary: {
       en: `Going on 4 years of experience in IT. Currently I’m working as a developer focusing on frontend and UX. I’m interested in all sorts of automation and developing front-end and back-end applications.`,

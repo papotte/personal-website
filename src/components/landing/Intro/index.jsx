@@ -25,12 +25,15 @@ function randomImg() {
 export const Intro = () => {
   const intl = useIntl()
   const locale = intl.locale
+  const introduction = Resume.basics.introduction[locale]
   return <Wrapper id="about">
     <Header />
     <IntroWrapper as={Container}>
       <Details>
         <h1><FormattedMessage id={'sections.about.title'} /></h1>
-        <h4>{Resume.basics.introduction[locale]}</h4>
+        {introduction.map((i) => {
+          return <p>{i}</p>
+        })}
         <AnchorLink className="button is-primary" href="#contact">
           <FormattedMessage id={'buttons.contact'} />
         </AnchorLink>
