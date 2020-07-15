@@ -3,9 +3,11 @@ import {Container} from 'components/common/Container'
 import {Layout} from 'components/common/Layout'
 import {Details, IntroWrapper} from 'components/landing/Intro/styles'
 import React from 'react'
+import {SimpleHeader} from '../components/theme/Header'
 
 export default () => (
   <Layout>
+    <SimpleHeader />
     <div className="container">
       <IntroWrapper as={Container}>
         <Details>

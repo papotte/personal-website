@@ -31,8 +31,8 @@ export const Intro = () => {
     <IntroWrapper as={Container}>
       <Details>
         <h1><FormattedMessage id={'sections.about.title'} /></h1>
-        {introduction.map((i) => {
-          return <p>{i}</p>
+        {introduction.map((text, index) => {
+          return <p key={index}>{text}</p>
         })}
         <AnchorLink className="button is-primary" href="#contact">
           <FormattedMessage id={'buttons.contact'} />
