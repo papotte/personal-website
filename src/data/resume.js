@@ -52,7 +52,7 @@ const resume = {
       company: 'PwC',
       position: {
         en: 'Software Engineer',
-        es: 'Ingeniera de Sistemas',
+        es: 'Ingeniero de Software',
         de: 'Softwareingenieurin'
       },
       website: 'https://www.pwc.de',
@@ -69,17 +69,17 @@ const resume = {
     {
       company: 'new frontiers Software',
       position: {
-        en: 'Developer',
-        es: 'Desarrollador de software',
-        de: 'Entwicklerin'
+        en: 'Software Engineer',
+        es: 'Ingeniero de Software',
+        de: 'Softwareingenieurin'
       },
       website: 'https://www.new-frontiers.de/',
       startDate: '2016-01-01',
       endDate: '2019-06-30',
       summary: {
-        en: 'During my master studies, started working part-time as a developer doing web and hybrid applications',
-        de: 'During my master studies, started working part-time as a developer doing web and hybrid applications',
-        es: 'During my master studies, started working part-time as a developer doing web and hybrid applications'
+        en: 'During my master studies, started working as a developer doing web and hybrid applications',
+        de: 'During my master studies, started working as a developer doing web and hybrid applications',
+        es: 'During my master studies, started working as a developer doing web and hybrid applications'
       },
       Proficientlights: [],
       tags: ['javascript', 'android', 'ionic', 'angular', 'vuejs', 'nestjs', 'git']
@@ -88,7 +88,7 @@ const resume = {
       company: 'AdSigo.co',
       position: {
         en: 'Software Engineer',
-        es: 'Ingeniera de Sistemas',
+        es: 'Ingeniero de Software',
         de: 'Softwareingenieurin'
       },
       startDate: '2015-04-01',
@@ -104,9 +104,9 @@ const resume = {
     {
       company: 'Naturefund e.V',
       position: {
-        en: 'IT Specialist',
-        de: 'IT-Specialist',
-        es: 'Especialista en IT'
+        en: 'Software Engineer',
+        de: 'Softwareingenieurin',
+        es: 'Ingeniero de Software'
       },
       website: 'https://www.naturefund.de/',
       startDate: '2013-11-25',
@@ -115,6 +115,24 @@ const resume = {
         en: 'Moved to Wiesbaden, Germany to work as a mobile app developer',
         de: 'Moved to Wiesbaden, Germany to work as a mobile app developer',
         es: 'Moved to Wiesbaden, Germany to work as a mobile app developer'
+      },
+      Proficientlights: [],
+      tags: ['javascript', 'cordova', 'closure', 'svn']
+    },
+    {
+      company: 'IBCaribe',
+      position: {
+        en: 'Software Engineer',
+        de: 'Softwareingenieurin',
+        es: 'Ingeniero de Software'
+      },
+      website: '',
+      startDate: '2013-04-01',
+      endDate: '2013-10-01',
+      summary: {
+        en: 'Got my first job working on an android application',
+        de: 'Got my first job working on an android application',
+        es: 'Got my first job working on an android application'
       },
       Proficientlights: [],
       tags: ['javascript', 'cordova', 'closure', 'svn']
