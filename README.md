@@ -75,9 +75,11 @@ npm run reset
 - And these useful of JavaScript libraries & Gatsby plugins [package.json](package.json)
 - Using [this](https://github.com/smakosh/gatsby-portfolio-dev/) starter and [this project](https://github.com/jcoelho93/personal-website) as inspiration
 
+<!--
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/papotte/personal-website)
+-->
 
 ## License
 
