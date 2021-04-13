@@ -17,17 +17,17 @@ const resume = {
       ],
       es: [
         'Soy una ingeniera de sistemas senior con siete años de experiencia, con enfoque en desarrollo de frontends.' +
-          ' Tengo experiencia en distintos frameworks para JavaScript y Java',
+        ' Tengo experiencia en distintos frameworks para JavaScript y Java',
         'En los últimos años he estado trabajando en equipos multifunctionales y entregando productos de software de' +
-          ' calidad.',
+        ' calidad.',
         'Este website ha sido creado por mi con ReactJS, Gatsby y Netlify'
       ],
       de: [
         'Ich bin einen Senior Software-Ingenieurin mit sieben Jahren Erfahrung und einem Fokus auf' +
-          ' Frontend-Entwicklung. Ich habe umfangreiche Erfahrung im mehrere JavaScript-Frameworks sowie in das' +
-          ' Java-Ökosystem.',
+        ' Frontend-Entwicklung. Ich habe umfangreiche Erfahrung im mehrere JavaScript-Frameworks sowie in das' +
+        ' Java-Ökosystem.',
         'In den letzten Jahre habe ich in funktionsübergreifenden Teams gearbeitet und Produkte mit Blick auf die' +
-          ' Codequalität geliefert',
+        ' Codequalität geliefert',
         'Ich habe diese Website mit ReactJS und Gatsby entwickelt. Es ist im Netlify gehostet.'
       ]
     },
@@ -49,6 +49,23 @@ const resume = {
   },
   work: [
     {
+      company: 'i2x',
+      position: {
+        en: 'Senior Software Engineer',
+        es: 'Ingeniero de Software (Frontend)',
+        de: 'Senior Softwareingenieurin'
+      },
+      website: 'https://www.i2x.ai',
+      startDate: '2020-12-01',
+      endDate: '',
+      summary: {
+        en: `Joined a Berlin start-up as a senior frontend developer`,
+        de: `Joined a Berlin start-up as a senior frontend developer`,
+        es: `Joined a Berlin start-up as a senior frontend developer`,
+      },
+      Proficientlights: [],
+      tags: ['javascript', 'typescript', 'reactjs', 'nodejs', 'docker', 'aws']
+    }, {
       company: 'PwC',
       position: {
         en: 'Software Engineer',
@@ -57,7 +74,7 @@ const resume = {
       },
       website: 'https://www.pwc.de',
       startDate: '2019-07-01',
-      endDate: '',
+      endDate: '2020-11-30',
       summary: {
         en: `Moved to Berlin to join PwC's DigiSpace as a full-stack developer`,
         de: `Moved to Berlin to join PwC's DigiSpace as a full-stack developer`,
