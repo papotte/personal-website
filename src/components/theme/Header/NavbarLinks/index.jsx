@@ -11,15 +11,24 @@ const options = [
 ]
 
 function LanguageSelector() {
-  return <NavbarMenu icon="language" intl={true} options={options} onChange={(item) => {
-    changeLocale(item)
-  }} />
+  return (
+    <NavbarMenu
+      icon="language"
+      intl={true}
+      options={options}
+      onChange={item => {
+        changeLocale(item)
+      }}
+    />
+  )
 }
 
 function NavLink({name}) {
-  return <AnchorLink className="is-dark" href={'#' + name}>
-    <FormattedMessage id={'nav.' + name} />
-  </AnchorLink>
+  return (
+    <AnchorLink className="is-dark" href={'#' + name}>
+      <FormattedMessage id={'nav.' + name} />
+    </AnchorLink>
+  )
 }
 
 const NavbarLinks = ({desktop}) => (

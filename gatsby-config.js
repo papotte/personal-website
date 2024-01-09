@@ -13,7 +13,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
-    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -38,40 +37,15 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.googleAnalyticsID,
-        head: true
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-favicon',
-      options: {
-        logo: `./static${config.logo}`,
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: `gatsby-plugin-manifest`,
       options: {
         name: config.defaultTitle,
-        short_name: 'starter',
-        start_url: '/',
+        short_name: `Ross`,
+        start_url: `/`,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: 'minimal-ui',
-        icon: `./static${config.logo}`
+        icon: `static${config.logo}`
       }
     },
     'gatsby-plugin-offline',

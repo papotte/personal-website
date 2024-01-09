@@ -11,7 +11,7 @@ import {
   url
 } from 'data/config'
 import React from 'react'
-import {Helmet} from 'react-helmet'
+
 
 export const SEO = ({title = defaultTitle, description = defaultDescription, location = ''}) => {
   const structuredDataOrganization = `{ 
@@ -46,7 +46,7 @@ export const SEO = ({title = defaultTitle, description = defaultDescription, loc
   	}`
 
   return (
-    <Helmet>
+    <>
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
@@ -60,6 +60,6 @@ export const SEO = ({title = defaultTitle, description = defaultDescription, loc
       <link rel="publisher" href={socialLinks.google} />
       <title>{title}</title>
       <html lang="en" dir="ltr" />
-    </Helmet>
+    </>
   )
 }

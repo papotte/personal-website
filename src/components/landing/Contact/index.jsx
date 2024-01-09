@@ -1,5 +1,5 @@
 import {Container} from 'components/common'
-import {FormattedMessage} from "gatsby-plugin-intl"
+import {FormattedMessage} from 'gatsby-plugin-intl'
 import React from 'react'
 import contact from 'assets/illustrations/talk.svg'
 import Data from 'data/config'
@@ -9,7 +9,9 @@ import {Details, Thumbnail, Wrapper} from './styles'
 export const Contact = () => (
   <Wrapper as={Container} id="contact">
     <Details>
-      <h1 className="title"><FormattedMessage id={'sections.contact'} /></h1>
+      <h1 className="title">
+        <FormattedMessage id={'sections.contact'} />
+      </h1>
       <ContactForm />
     </Details>
     <Thumbnail>

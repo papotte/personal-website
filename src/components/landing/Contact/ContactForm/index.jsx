@@ -7,23 +7,26 @@ import Recaptcha from 'react-google-recaptcha'
 import * as Yup from 'yup'
 import {Center, Error, InputField} from './styles'
 
-
 function GetInput({name, error, component = 'input', rows}) {
   const intl = useIntl()
-  return <InputField>
-    <Input
-      as={FastField}
-      className={component + ' is-primary'}
-      type="text"
-      name={name}
-      component={component}
-      rows={rows}
-      aria-label={name}
-      placeholder={intl.formatMessage({id: `inputs.${name}.label`}) + '*'}
-      error={error}
-    />
-    <div className="has-text-danger"><ErrorMessage name={name} /></div>
-  </InputField>
+  return (
+    <InputField>
+      <Input
+        as={FastField}
+        className={component + ' is-primary'}
+        type="text"
+        name={name}
+        component={component}
+        rows={rows}
+        aria-label={name}
+        placeholder={intl.formatMessage({id: `inputs.${name}.label`}) + '*'}
+        error={error}
+      />
+      <div className="has-text-danger">
+        <ErrorMessage name={name} />
+      </div>
+    </InputField>
+  )
 }
 
 export default () => (
@@ -69,9 +72,7 @@ export default () => (
       <Form>
         <GetInput name="name" error={touched.name && errors.name} />
         <GetInput name="email" error={touched.email && errors.email} />
-        <GetInput name="message" error={touched.message && errors.message}
-                  component="textarea"
-                  rows="8" />
+        <GetInput name="message" error={touched.message && errors.message} component="textarea" rows="8" />
         {values.name && values.email && values.message && (
           <InputField>
             <FastField
@@ -86,7 +87,9 @@ export default () => (
         {values.success && (
           <InputField>
             <Center className="has-text-success">
-              <h4><FormattedMessage id={'messages.messageSent'} /></h4>
+              <h4>
+                <FormattedMessage id={'messages.messageSent'} />
+              </h4>
             </Center>
           </InputField>
         )}

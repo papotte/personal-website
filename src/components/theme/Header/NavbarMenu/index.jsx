@@ -2,7 +2,7 @@ import {useIntl} from 'gatsby-plugin-intl'
 import React from 'react'
 import classNames from 'classnames'
 
-const IntlOptions = (props) => {
+const IntlOptions = props => {
   const intl = useIntl()
   const options = props.options
   return options.map((item, index) => {
@@ -13,9 +13,11 @@ const IntlOptions = (props) => {
       'dropdown-item': true,
       'is-active': props.selected === value
     })
-    return <a href="#" className={itemClasses} key={index} onClick={() => props.select(value)}>
-      {displayName}
-    </a>
+    return (
+      <a href="#" className={itemClasses} key={index} onClick={() => props.select(value)}>
+        {displayName}
+      </a>
+    )
   })
 }
 
@@ -43,30 +45,38 @@ export class NavbarMenu extends React.Component {
 
   render() {
     const dropdownClasses = classNames({
-      'dropdown': true,
+      dropdown: true,
       'is-active': this.state.dropdownActive
     })
 
-    const innerButton = this.props.icon ?
-      <span className="icon"><i className={['fi icon-' + this.props.icon]} /></span>
-      : <span>{this.state.selection}</span>
+    const innerButton = this.props.icon ? (
+      <span className="icon">
+        <i className={['fi icon-' + this.props.icon]} />
+      </span>
+    ) : (
+      <span>{this.state.selection}</span>
+    )
 
-    return <div className={dropdownClasses}>
-      <div className="dropdown-trigger">
-        <a className="link is-dark has-dropdown" aria-haspopup="true" aria-controls="dropdown-menu6"
-           onClick={this.triggerMenu}>
-          {innerButton}
-          <span className="icon is-small">
-            <i className="fi icon-chevron-down" aria-hidden="true" />
-          </span>
-        </a>
-      </div>
-      <div className="dropdown-menu" id="dropdown-menu6" role="menu">
-        <div className="dropdown-content">
-          {this.props.intl ? this.getIntlOptions() : this.getOptions()}
+    return (
+      <div className={dropdownClasses}>
+        <div className="dropdown-trigger">
+          <a
+            className="link is-dark has-dropdown"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu6"
+            onClick={this.triggerMenu}
+          >
+            {innerButton}
+            <span className="icon is-small">
+              <i className="fi icon-chevron-down" aria-hidden="true" />
+            </span>
+          </a>
+        </div>
+        <div className="dropdown-menu" id="dropdown-menu6" role="menu">
+          <div className="dropdown-content">{this.props.intl ? this.getIntlOptions() : this.getOptions()}</div>
         </div>
       </div>
-    </div>
+    )
   }
 
   getOptions() {
@@ -75,9 +85,11 @@ export class NavbarMenu extends React.Component {
         'dropdown-item': true,
         'is-active': this.state.selected === item.value
       })
-      return <a href="#" className={itemClasses} key={index} onClick={() => this.select(item.value)}>
-        {item.displayName}
-      </a>
+      return (
+        <a href="#" className={itemClasses} key={index} onClick={() => this.select(item.value)}>
+          {item.displayName}
+        </a>
+      )
     })
   }
 

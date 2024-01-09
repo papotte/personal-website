@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import {Document, Page} from 'react-pdf'
 
 export default function AllPages(props) {
   const [numPages, setNumPages] = useState(null)
@@ -11,15 +10,7 @@ export default function AllPages(props) {
   const {pdf, width} = props
 
   return (
-    <Document
-      file={pdf}
-      options={{workerSrc: '/pdf.worker.js'}}
-      onLoadSuccess={onDocumentLoadSuccess}
-    >
-      {Array.from(new Array(numPages), (el, index) => (
-        <Page key={`page_${index + 1}`} pageNumber={index + 1}
-              width={width} />
-      ))}
-    </Document>
+    <div className="all-page-container">
+    </div>
   )
 }

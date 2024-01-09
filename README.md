@@ -39,9 +39,10 @@
 ## Prerequisites
 
 ### Online
+
 1. Create a Netlify project
 1. Create an account at [Formik](https://formik.com/) and grab your form endpoint url ~~> might move to Netlify
- forms?~~
+   forms?~~
 1. Grab a Google recaptcha key from [Google Recaptcha](https://www.google.com/recaptcha/admin)
 1. Grab your Github token from [GitHub](https://github.com/settings/tokens/new?scopes=repo&description=portfolio-dev)
 1. Add them to your Netlify project as environment variables
@@ -49,7 +50,6 @@
 - Formik form endpoint
 - Google recaptcha public key
 - Github token
-
 
 ### Locally
 
@@ -59,6 +59,7 @@
 1. Run `npm install && npm run start`
 
 ### Clean the cache
+
 This removes the `.cache/` & `public/` folders
 
 ```bash
@@ -87,7 +88,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contributors
 
-- [Ross Bermudez](https://github.com/papotte) 
+- [Ross Bermudez](https://github.com/papotte)
 
 ## Support
 

@@ -11,13 +11,15 @@ export const Skills = () => (
   <Wrapper id="skills">
     <SkillsWrapper as={Container}>
       <Details>
-        <h1 className="title"><FormattedMessage id={'sections.skills.title'} /></h1>
+        <h1 className="title">
+          <FormattedMessage id={'sections.skills.title'} />
+        </h1>
         <div className="columns">
           <div className="column is-6">
             <div className="column">
               <div className="has-text-centered">
                 <span className="icon is-large">
-                  <i className="fi icon-code"/>
+                  <i className="fi icon-code" />
                 </span>
                 <h2 className="title is-5 has-text-dark">
                   <FormattedMessage id={'sections.skills.languages'} />
@@ -35,7 +37,7 @@ export const Skills = () => (
             <div className="column">
               <div className="has-text-centered">
                 <span className="icon is-large">
-                  <i className="fi icon-laptop"/>
+                  <i className="fi icon-laptop" />
                 </span>
                 <h2 className="title is-5 has-text-dark">
                   <FormattedMessage id={'sections.skills.frameworks'} />
@@ -54,7 +56,7 @@ export const Skills = () => (
           <div className="column is-6">
             <div className="has-text-centered">
               <span className="icon is-large">
-                <i className="fi icon-cog"/>
+                <i className="fi icon-cog" />
               </span>
               <h2 className="title is-5 has-text-dark">
                 <FormattedMessage id={'sections.skills.tools'} />

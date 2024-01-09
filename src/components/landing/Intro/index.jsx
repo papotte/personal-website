@@ -26,21 +26,25 @@ export const Intro = () => {
   const intl = useIntl()
   const locale = intl.locale
   const introduction = Resume.basics.introduction[locale]
-  return <Wrapper id="about">
-    <Header />
-    <IntroWrapper as={Container}>
-      <Details>
-        <h1><FormattedMessage id={'sections.about.title'} /></h1>
-        {introduction.map((text, index) => {
-          return <p key={index}>{text}</p>
-        })}
-        <AnchorLink className="button is-primary" href="#contact">
-          <FormattedMessage id={'buttons.contact'} />
-        </AnchorLink>
-      </Details>
-      <figure className="image" style={{width: 40 + '%'}}>
-        <img src={randomImg()} alt={Data.defaultDescription} />
-      </figure>
-    </IntroWrapper>
-  </Wrapper>
+  return (
+    <Wrapper id="about">
+      <Header />
+      <IntroWrapper as={Container}>
+        <Details>
+          <h1>
+            <FormattedMessage id={'sections.about.title'} />
+          </h1>
+          {introduction.map((text, index) => {
+            return <p key={index}>{text}</p>
+          })}
+          <AnchorLink className="button is-primary" href="#contact">
+            <FormattedMessage id={'buttons.contact'} />
+          </AnchorLink>
+        </Details>
+        <figure className="image" style={{width: 40 + '%'}}>
+          <img src={randomImg()} alt={Data.defaultDescription} />
+        </figure>
+      </IntroWrapper>
+    </Wrapper>
+  )
 }

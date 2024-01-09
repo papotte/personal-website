@@ -26,12 +26,18 @@ export const Footer = () => (
                 </a>
               ),
               react: () => (
-                <a href="https://reactjs.org/" rel="noopener noreferrer" target="_blank"
-                   className="icon has-text-react is-small" aria-label="ReactJS">
+                <a
+                  href="https://reactjs.org/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="icon has-text-react is-small"
+                  aria-label="ReactJS"
+                >
                   <i className="fi icon-react"></i>
                 </a>
               )
-            }} />
+            }}
+          />
         </p>
       </Details>
       <Links>

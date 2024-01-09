@@ -27,15 +27,15 @@ export class Curriculum extends PureComponent {
   }
 
   render() {
-    return <Wrapper id="about">
-      <SimpleHeader />
-      <IntroWrapper as={Container} ref={(ref) => this.pdfWrapper = ref}>
-        <div className="all-page-container">
-          <AllPages
-            width={this.state.width}
-            pdf={this.file} />
-        </div>
-      </IntroWrapper>
-    </Wrapper>
+    return (
+      <Wrapper id="about">
+        <SimpleHeader />
+        <IntroWrapper as={Container} ref={ref => (this.pdfWrapper = ref)}>
+          <div className="all-page-container">
+            <AllPages width={this.state.width} pdf={this.file} />
+          </div>
+        </IntroWrapper>
+      </Wrapper>
+    )
   }
 }
