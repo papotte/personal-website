@@ -87,7 +87,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contributors
 
-- [Rossana Bermudez](https://github.com/papotte) 
+- [Ross Bermudez](https://github.com/papotte) 
 
 ## Support
 

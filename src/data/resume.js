@@ -1,6 +1,6 @@
 const resume = {
   basics: {
-    firstName: 'Rossana',
+    firstName: 'Ross',
     lastName: 'Bermudez',
     label: {
       en: 'Software Engineer',

@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://rossana.lcdll.org/sitemap.xlm
+Sitemap: http://papotte.dev/sitemap.xlm

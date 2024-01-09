@@ -1,13 +1,13 @@
 module.exports = {
-  defaultTitle: 'Rossana Bermudez',
+  defaultTitle: 'Ross Bermudez',
   logo: '/favicon/icon.svg',
-  author: 'Rossana Bermudez',
-  url: 'https://rossana.lcdll.org',
-  legalName: 'Rossana Bermudez',
-  defaultDescription: "I'm Rossana and I'm a Software engineer!",
+  author: 'Ross Bermudez',
+  url: 'https://papotte.dev',
+  legalName: 'Ross Bermudez',
+  defaultDescription: "I'm Ross and I'm a Software engineer!",
   socialLinks: {
     github: 'https://github.com/papotte',
-    linkedin: 'https://www.linkedin.com/in/rossana-bermudez',
+    linkedin: 'https://www.linkedin.com/in/ross-bermudez',
     instagram: 'https://instagram.com/roucip',
     telegram: 'https://t.me/papotte'
   },
@@ -20,7 +20,7 @@ module.exports = {
     zipCode: '10969'
   },
   contact: {
-    email: 'rossana.bermudezd@gmail.com',
+    email: 'berm.ross@gmail.com',
     phone: '15906310854'
   },
   foundingDate: '2020'
