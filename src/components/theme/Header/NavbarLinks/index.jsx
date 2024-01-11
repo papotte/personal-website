@@ -3,6 +3,7 @@ import React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {NavbarMenu} from '../NavbarMenu'
 import {Wrapper} from './styles'
+import NavbarMenu2 from '../NavbarMenu2'
 
 const options = [
   {key: 'lang.en', displayName: 'long', value: 'short'},
@@ -12,14 +13,19 @@ const options = [
 
 function LanguageSelector() {
   return (
-    <NavbarMenu
-      icon="language"
-      intl={true}
-      options={options}
-      onChange={item => {
-        changeLocale(item)
-      }}
-    />
+    <div>
+      <NavbarMenu
+        icon="language"
+        intl={true}
+        options={options}
+        onChange={item => {
+          changeLocale(item)
+        }}
+      />
+      <div>
+        <NavbarMenu2 icon="language" intl={true} langOptions={options} />
+      </div>
+    </div>
   )
 }
 
