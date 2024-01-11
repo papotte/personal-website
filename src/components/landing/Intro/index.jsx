@@ -48,3 +48,17 @@ export const Intro = () => {
     </Wrapper>
   )
 }
+//
+// const IntroWithProps = ({intl, ...restProps}) => {
+//   return <Header />
+// }
+//
+// IntroWithProps.propTypes = {
+//   intl: PropTypes.object.isRequired,
+//   store: PropTypes.object.isRequired,
+//   theme: PropTypes.object.isRequired,
+// }
+//
+// export default withIntl(withTheme(withStore((IntroWithProps))));
+withIntl(Intro)
+introWith(intl)
